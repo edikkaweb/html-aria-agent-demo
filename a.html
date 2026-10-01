@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Carnet de notes — Panier</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="experiment.js" defer></script>
+</head>
+<body class="test-page">
+  <header class="test-header"><div class="wrap"><span class="wordmark">ATELIER</span><a id="start" href="#product">Voir le produit</a></div></header>
+  <main class="test-shell wrap">
+    <noscript><p class="noscript">JavaScript est désactivé. L’ajout et la remise à zéro du panier ne sont pas disponibles.</p></noscript>
+    <section class="product" id="product" aria-labelledby="product-title">
+      <div class="product-art" aria-hidden="true"><div class="notebook">NOTES</div></div>
+      <div class="product-copy">
+        <p class="eyebrow">Papeterie · Collection essentielle</p>
+        <h1 id="product-title">Carnet de notes</h1>
+        <p>Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.</p>
+        <div class="command" id="command">Ajouter au panier</div>
+      </div>
+    </section>
+    <div class="cart">
+      <p>Articles dans le panier : <output id="count" aria-live="polite" aria-atomic="true">0</output></p>
+      <button type="button" class="reset" id="reset">Vider le panier</button>
+    </div>
+    <footer class="test-footer"><a id="home" href="index.html">Retour à la présentation</a></footer>
+  </main>
+</body>
+</html>
