@@ -6,7 +6,7 @@ Trois implémentations de « Ajouter au panier » partagent le même environneme
 
 **Question ouverte : un agent peut-il réussir une action qui reste inaccessible au clavier ?** Les tests déterministes ne répondent pas à cette question. Les essais d’agents indépendants et de lecteurs d’écran restent **Non testé** tant qu’aucun relevé correspondant n’est publié.
 
-[Code et historique sur GitHub](https://github.com/edikkaweb/html-aria-agent-demo).
+[Essayer la démonstration en ligne](https://edikkaweb.github.io/html-aria-agent-demo/) · [Code et historique sur GitHub](https://github.com/edikkaweb/html-aria-agent-demo).
 
 ## Essayer
 
@@ -33,6 +33,8 @@ Le script ajoute chaque exécution dans [observations.json](observations.json), 
 Les sorties comprennent le compteur après trois clics, les étapes de tabulation et de retour arrière, les activations clavier lorsqu’elles sont accessibles naturellement, les attributs DOM, la géométrie et les instantanés `locator.ariaSnapshot()` au même stade initial. La fonction `evaluate()` lit l’état ; elle ne place jamais le focus et n’active aucune commande.
 
 ## Distinguer attente et observation
+
+Vérifiée localement puis sur GitHub Pages le 1er octobre 2026 : 65 contrôles locaux et 85 contrôles de production par navigateur, tous réussis. Les contrôles en ligne incluent les empreintes SHA-256 des 10 fichiers sources et de test. Les observations brutes identifient la révision `182c07eaee4d8cc466d59d1dc09d9dc252021052584ac062edb804ba54373c82` du candidat publié.
 
 Les premières exécutions du 1er octobre 2026, avec Chrome 154.0.8037.59 et Firefox 155.0 sur macOS, donnent les mêmes observations : trois clics produisent 0 → 1 → 2 → 3 sur A, B et C ; Tab ignore A et B ; C est atteinte et ajoute une unité avec Entrée comme avec Espace. B et C sont toutes deux restituées comme `button "Ajouter au panier"` par l’instantané Playwright ; A est restituée comme texte. Ces résultats concernent uniquement ces configurations. Les activations clavier de A/B sont marquées **Non testé — commande non atteinte par Tab** ; leur absence du parcours est, elle, observée.
 
