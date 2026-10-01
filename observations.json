@@ -6121,6 +6121,1422 @@
       "agents": "Non testé",
       "passed": true,
       "baseURL": "http://127.0.0.1:49427/html-aria-agent-demo/"
+    },
+    {
+      "provenanceVersion": 2,
+      "scope": "Comportement des variantes A/B/C ; présentation contrôlée séparément.",
+      "date": "2026-10-01T05:31:38.835Z",
+      "environment": "publication",
+      "browser": "chromium",
+      "channel": "chrome",
+      "browserVersion": "154.0.8037.59",
+      "playwright": "1.63.0",
+      "node": "v22.12.0",
+      "platform": "darwin 25.3.0 arm64",
+      "command": "BASE_URL=<URL vérifiée> BROWSER=chromium CHANNEL=chrome npm test",
+      "sourceRevision": "f38d21693c8f355db5692b9cfdc0f8b8aa102903357c8cf4e7b38ae7a02e93d1",
+      "sourceHashes": {
+        "a.html": "d43a087c6007885509f34928657f8ab0cf16ff43143527b7b3ab0ceb7e731bde",
+        "b.html": "06e6f66d168d6b8c83f3dcdf1aa5469e43d64082b91405fe4ec4622b7ef8ee88",
+        "c.html": "91a31069f49e49fe28daf7f700b9c5b37104df715f97cd5b14d2c994dd7842dc",
+        "experiment.js": "c6adc8745f1f354ecf94ba92789983210c38fd05902621551a46d2ab9d29dc6d",
+        "styles.css": "df1378eb74252364826b20b5cb8120d13decca6a92ffb0ae71f7e0822de424fd",
+        "verify.mjs": "6ce42a378e3afc89550afd63f273e32863723719bc2470ea820aa8a704744dcb",
+        "serve.mjs": "dd192f9e35cdfa6a8c04b4d598fee8299cee8e1f106ab346fdac3b16b67adfed",
+        "package.json": "469482510823f83af3b2bc7da9007badbe3d518a217a66cd67211d09fe6053d0",
+        "package-lock.json": "46d386904e35355dd226fe08a7a7ff99b69173fd2f52a4339c52e87b95918604"
+      },
+      "sourceRevisionMethod": "SHA-256 du manifeste ordonné des pages expérimentales, dépendances et outillage ; index.html, observations.json et fichiers de présentation exclus. Les anciens relevés sans provenanceVersion gardent leur manifeste historique.",
+      "snapshotAPI": "locator.ariaSnapshot(), options par défaut, capturé avant interaction, compteur à zéro",
+      "keyboardMethod": "Contexte neuf par essai ; Tab depuis le document, aucun focus forcé ; keyboard.press pour Entrée/Espace.",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "checks": [
+        {
+          "name": "Source publiée a.html: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée a.html: contenu identique",
+          "actual": "d43a087c6007885509f34928657f8ab0cf16ff43143527b7b3ab0ceb7e731bde",
+          "expected": "d43a087c6007885509f34928657f8ab0cf16ff43143527b7b3ab0ceb7e731bde",
+          "passed": true
+        },
+        {
+          "name": "Source publiée b.html: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée b.html: contenu identique",
+          "actual": "06e6f66d168d6b8c83f3dcdf1aa5469e43d64082b91405fe4ec4622b7ef8ee88",
+          "expected": "06e6f66d168d6b8c83f3dcdf1aa5469e43d64082b91405fe4ec4622b7ef8ee88",
+          "passed": true
+        },
+        {
+          "name": "Source publiée c.html: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée c.html: contenu identique",
+          "actual": "91a31069f49e49fe28daf7f700b9c5b37104df715f97cd5b14d2c994dd7842dc",
+          "expected": "91a31069f49e49fe28daf7f700b9c5b37104df715f97cd5b14d2c994dd7842dc",
+          "passed": true
+        },
+        {
+          "name": "Source publiée experiment.js: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée experiment.js: contenu identique",
+          "actual": "c6adc8745f1f354ecf94ba92789983210c38fd05902621551a46d2ab9d29dc6d",
+          "expected": "c6adc8745f1f354ecf94ba92789983210c38fd05902621551a46d2ab9d29dc6d",
+          "passed": true
+        },
+        {
+          "name": "Source publiée styles.css: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée styles.css: contenu identique",
+          "actual": "df1378eb74252364826b20b5cb8120d13decca6a92ffb0ae71f7e0822de424fd",
+          "expected": "df1378eb74252364826b20b5cb8120d13decca6a92ffb0ae71f7e0822de424fd",
+          "passed": true
+        },
+        {
+          "name": "Source publiée verify.mjs: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée verify.mjs: contenu identique",
+          "actual": "6ce42a378e3afc89550afd63f273e32863723719bc2470ea820aa8a704744dcb",
+          "expected": "6ce42a378e3afc89550afd63f273e32863723719bc2470ea820aa8a704744dcb",
+          "passed": true
+        },
+        {
+          "name": "Source publiée serve.mjs: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée serve.mjs: contenu identique",
+          "actual": "dd192f9e35cdfa6a8c04b4d598fee8299cee8e1f106ab346fdac3b16b67adfed",
+          "expected": "dd192f9e35cdfa6a8c04b4d598fee8299cee8e1f106ab346fdac3b16b67adfed",
+          "passed": true
+        },
+        {
+          "name": "Source publiée package.json: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée package.json: contenu identique",
+          "actual": "469482510823f83af3b2bc7da9007badbe3d518a217a66cd67211d09fe6053d0",
+          "expected": "469482510823f83af3b2bc7da9007badbe3d518a217a66cd67211d09fe6053d0",
+          "passed": true
+        },
+        {
+          "name": "Source publiée package-lock.json: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée package-lock.json: contenu identique",
+          "actual": "46d386904e35355dd226fe08a7a7ff99b69173fd2f52a4339c52e87b95918604",
+          "expected": "46d386904e35355dd226fe08a7a7ff99b69173fd2f52a4339c52e87b95918604",
+          "passed": true
+        },
+        {
+          "name": "a: compteur initial",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "a: rôle bouton",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "a: clics successifs",
+          "actual": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "name": "a: remise à zéro",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "a: parcours Tab jusqu’à reset",
+          "actual": [
+            "start",
+            "reset"
+          ],
+          "expected": [
+            "start",
+            "reset"
+          ],
+          "passed": true
+        },
+        {
+          "name": "a: retour Maj+Tab",
+          "actual": "start",
+          "expected": "start",
+          "passed": true
+        },
+        {
+          "name": "b: compteur initial",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "b: rôle bouton",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "name": "b: clics successifs",
+          "actual": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "name": "b: remise à zéro",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "b: parcours Tab jusqu’à reset",
+          "actual": [
+            "start",
+            "reset"
+          ],
+          "expected": [
+            "start",
+            "reset"
+          ],
+          "passed": true
+        },
+        {
+          "name": "b: retour Maj+Tab",
+          "actual": "start",
+          "expected": "start",
+          "passed": true
+        },
+        {
+          "name": "c: compteur initial",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "c: rôle bouton",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "name": "c: clics successifs",
+          "actual": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "name": "c: remise à zéro",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "c: parcours Tab jusqu’à reset",
+          "actual": [
+            "start",
+            "command",
+            "reset"
+          ],
+          "expected": [
+            "start",
+            "command",
+            "reset"
+          ],
+          "passed": true
+        },
+        {
+          "name": "c: retour Maj+Tab",
+          "actual": "command",
+          "expected": "command",
+          "passed": true
+        },
+        {
+          "name": "c: focus visible Enter",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "c: activation Enter",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "name": "c: focus visible Space",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "c: activation Space",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "name": "Contexte HTML identique hors commande",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Texte visible identique",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Position et dimensions identiques",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Style identique",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Libellé identique",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Aucun tabindex ajouté",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Un gestionnaire click commun sur command",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Aucun gestionnaire clavier ou focus()",
+          "actual": false,
+          "expected": false,
+          "passed": true
+        },
+        {
+          "name": "Avertissement sans JavaScript visible",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Aucune erreur JavaScript",
+          "actual": [],
+          "expected": [],
+          "passed": true
+        },
+        {
+          "name": "Aucune réponse HTTP en erreur",
+          "actual": [],
+          "expected": [],
+          "passed": true
+        }
+      ],
+      "variants": [
+        {
+          "variant": "a",
+          "initialCount": 0,
+          "commandSnapshot": "- text: Ajouter au panier",
+          "pageSnapshot": "- banner:\n  - text: ATELIER\n  - link \"Voir le produit\":\n    - /url: \"#product\"\n- main:\n  - region \"Carnet de notes\":\n    - paragraph: Papeterie · Collection essentielle\n    - heading \"Carnet de notes\" [level=1]\n    - paragraph: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n    - text: Ajouter au panier\n  - paragraph:\n    - text: \"Articles dans le panier :\"\n    - status: \"0\"\n  - button \"Vider le panier\"\n  - link \"Retour à la présentation\":\n    - /url: index.html",
+          "clickCounts": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "keyboard": {
+            "reached": false,
+            "enterDelta": null,
+            "spaceDelta": null,
+            "status": "Non testé",
+            "initialFocus": {
+              "tag": "BODY",
+              "id": "",
+              "text": "ATELIERVoir le produit\n  \n    <p class=\"noscript\">JavaScript est désactivé. L’ajout et la remise à z"
+            },
+            "forward": [
+              {
+                "tag": "A",
+                "id": "start",
+                "text": "Voir le produit"
+              },
+              {
+                "tag": "BUTTON",
+                "id": "reset",
+                "text": "Vider le panier"
+              }
+            ],
+            "backward": {
+              "tag": "A",
+              "id": "start",
+              "text": "Voir le produit"
+            },
+            "Enter": {
+              "traversal": [
+                {
+                  "tag": "A",
+                  "id": "start",
+                  "text": "Voir le produit"
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "reset",
+                  "text": "Vider le panier"
+                }
+              ],
+              "status": "Non testé — commande non atteinte par Tab"
+            },
+            "Space": {
+              "traversal": [
+                {
+                  "tag": "A",
+                  "id": "start",
+                  "text": "Voir le produit"
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "reset",
+                  "text": "Vider le panier"
+                }
+              ],
+              "status": "Non testé — commande non atteinte par Tab"
+            }
+          },
+          "errors": [],
+          "buttonRoleCount": 0,
+          "dom": {
+            "tag": "DIV",
+            "role": null,
+            "tabindex": null,
+            "type": null,
+            "text": "Ajouter au panier",
+            "box": {
+              "x": 664,
+              "y": 364.859375,
+              "width": 384.8125,
+              "height": 56
+            },
+            "style": {
+              "font": "600 16px / 24px Arial, Helvetica, sans-serif",
+              "background": "rgb(12, 26, 36)",
+              "color": "rgb(255, 255, 255)",
+              "padding": "14px 24px",
+              "border": "2px solid rgb(12, 26, 36)",
+              "borderRadius": "7px"
+            }
+          },
+          "environmentText": "ATELIER\nVoir le produit\nNOTES\n\nPAPETERIE · COLLECTION ESSENTIELLE\n\nCarnet de notes\n\nUn carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n\nAjouter au panier\n\nArticles dans le panier : 0\n\nVider le panier\nRetour à la présentation"
+        },
+        {
+          "variant": "b",
+          "initialCount": 0,
+          "commandSnapshot": "- button \"Ajouter au panier\"",
+          "pageSnapshot": "- banner:\n  - text: ATELIER\n  - link \"Voir le produit\":\n    - /url: \"#product\"\n- main:\n  - region \"Carnet de notes\":\n    - paragraph: Papeterie · Collection essentielle\n    - heading \"Carnet de notes\" [level=1]\n    - paragraph: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n    - button \"Ajouter au panier\"\n  - paragraph:\n    - text: \"Articles dans le panier :\"\n    - status: \"0\"\n  - button \"Vider le panier\"\n  - link \"Retour à la présentation\":\n    - /url: index.html",
+          "clickCounts": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "keyboard": {
+            "reached": false,
+            "enterDelta": null,
+            "spaceDelta": null,
+            "status": "Non testé",
+            "initialFocus": {
+              "tag": "BODY",
+              "id": "",
+              "text": "ATELIERVoir le produit\n  \n    <p class=\"noscript\">JavaScript est désactivé. L’ajout et la remise à z"
+            },
+            "forward": [
+              {
+                "tag": "A",
+                "id": "start",
+                "text": "Voir le produit"
+              },
+              {
+                "tag": "BUTTON",
+                "id": "reset",
+                "text": "Vider le panier"
+              }
+            ],
+            "backward": {
+              "tag": "A",
+              "id": "start",
+              "text": "Voir le produit"
+            },
+            "Enter": {
+              "traversal": [
+                {
+                  "tag": "A",
+                  "id": "start",
+                  "text": "Voir le produit"
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "reset",
+                  "text": "Vider le panier"
+                }
+              ],
+              "status": "Non testé — commande non atteinte par Tab"
+            },
+            "Space": {
+              "traversal": [
+                {
+                  "tag": "A",
+                  "id": "start",
+                  "text": "Voir le produit"
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "reset",
+                  "text": "Vider le panier"
+                }
+              ],
+              "status": "Non testé — commande non atteinte par Tab"
+            }
+          },
+          "errors": [],
+          "buttonRoleCount": 1,
+          "dom": {
+            "tag": "DIV",
+            "role": "button",
+            "tabindex": null,
+            "type": null,
+            "text": "Ajouter au panier",
+            "box": {
+              "x": 664,
+              "y": 364.859375,
+              "width": 384.8125,
+              "height": 56
+            },
+            "style": {
+              "font": "600 16px / 24px Arial, Helvetica, sans-serif",
+              "background": "rgb(12, 26, 36)",
+              "color": "rgb(255, 255, 255)",
+              "padding": "14px 24px",
+              "border": "2px solid rgb(12, 26, 36)",
+              "borderRadius": "7px"
+            }
+          },
+          "environmentText": "ATELIER\nVoir le produit\nNOTES\n\nPAPETERIE · COLLECTION ESSENTIELLE\n\nCarnet de notes\n\nUn carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n\nAjouter au panier\n\nArticles dans le panier : 0\n\nVider le panier\nRetour à la présentation"
+        },
+        {
+          "variant": "c",
+          "initialCount": 0,
+          "commandSnapshot": "- button \"Ajouter au panier\"",
+          "pageSnapshot": "- banner:\n  - text: ATELIER\n  - link \"Voir le produit\":\n    - /url: \"#product\"\n- main:\n  - region \"Carnet de notes\":\n    - paragraph: Papeterie · Collection essentielle\n    - heading \"Carnet de notes\" [level=1]\n    - paragraph: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n    - button \"Ajouter au panier\"\n  - paragraph:\n    - text: \"Articles dans le panier :\"\n    - status: \"0\"\n  - button \"Vider le panier\"\n  - link \"Retour à la présentation\":\n    - /url: index.html",
+          "clickCounts": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "keyboard": {
+            "reached": true,
+            "enterDelta": 1,
+            "spaceDelta": 1,
+            "status": "Testé après tabulation naturelle",
+            "initialFocus": {
+              "tag": "BODY",
+              "id": "",
+              "text": "ATELIERVoir le produit\n  \n    <p class=\"noscript\">JavaScript est désactivé. L’ajout et la remise à z"
+            },
+            "forward": [
+              {
+                "tag": "A",
+                "id": "start",
+                "text": "Voir le produit"
+              },
+              {
+                "tag": "BUTTON",
+                "id": "command",
+                "text": "Ajouter au panier"
+              },
+              {
+                "tag": "BUTTON",
+                "id": "reset",
+                "text": "Vider le panier"
+              }
+            ],
+            "backward": {
+              "tag": "BUTTON",
+              "id": "command",
+              "text": "Ajouter au panier"
+            },
+            "Enter": {
+              "traversal": [
+                {
+                  "tag": "A",
+                  "id": "start",
+                  "text": "Voir le produit"
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "command",
+                  "text": "Ajouter au panier"
+                }
+              ],
+              "before": 0,
+              "after": 1,
+              "focusStyle": {
+                "visible": true,
+                "outline": "solid",
+                "width": "3px"
+              }
+            },
+            "Space": {
+              "traversal": [
+                {
+                  "tag": "A",
+                  "id": "start",
+                  "text": "Voir le produit"
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "command",
+                  "text": "Ajouter au panier"
+                }
+              ],
+              "before": 0,
+              "after": 1,
+              "focusStyle": {
+                "visible": true,
+                "outline": "solid",
+                "width": "3px"
+              }
+            }
+          },
+          "errors": [],
+          "buttonRoleCount": 1,
+          "dom": {
+            "tag": "BUTTON",
+            "role": null,
+            "tabindex": null,
+            "type": "button",
+            "text": "Ajouter au panier",
+            "box": {
+              "x": 664,
+              "y": 364.859375,
+              "width": 384.8125,
+              "height": 56
+            },
+            "style": {
+              "font": "600 16px / 24px Arial, Helvetica, sans-serif",
+              "background": "rgb(12, 26, 36)",
+              "color": "rgb(255, 255, 255)",
+              "padding": "14px 24px",
+              "border": "2px solid rgb(12, 26, 36)",
+              "borderRadius": "7px"
+            }
+          },
+          "environmentText": "ATELIER\nVoir le produit\nNOTES\n\nPAPETERIE · COLLECTION ESSENTIELLE\n\nCarnet de notes\n\nUn carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n\nAjouter au panier\n\nArticles dans le panier : 0\n\nVider le panier\nRetour à la présentation"
+        }
+      ],
+      "pageErrors": [],
+      "networkErrors": [],
+      "screenReaders": "Non testé",
+      "agents": "Non testé",
+      "passed": true,
+      "baseURL": "https://edikkaweb.github.io/html-aria-agent-demo/",
+      "publishedSourceHashes": {
+        "a.html": "d43a087c6007885509f34928657f8ab0cf16ff43143527b7b3ab0ceb7e731bde",
+        "b.html": "06e6f66d168d6b8c83f3dcdf1aa5469e43d64082b91405fe4ec4622b7ef8ee88",
+        "c.html": "91a31069f49e49fe28daf7f700b9c5b37104df715f97cd5b14d2c994dd7842dc",
+        "experiment.js": "c6adc8745f1f354ecf94ba92789983210c38fd05902621551a46d2ab9d29dc6d",
+        "styles.css": "df1378eb74252364826b20b5cb8120d13decca6a92ffb0ae71f7e0822de424fd",
+        "verify.mjs": "6ce42a378e3afc89550afd63f273e32863723719bc2470ea820aa8a704744dcb",
+        "serve.mjs": "dd192f9e35cdfa6a8c04b4d598fee8299cee8e1f106ab346fdac3b16b67adfed",
+        "package.json": "469482510823f83af3b2bc7da9007badbe3d518a217a66cd67211d09fe6053d0",
+        "package-lock.json": "46d386904e35355dd226fe08a7a7ff99b69173fd2f52a4339c52e87b95918604"
+      }
+    },
+    {
+      "provenanceVersion": 2,
+      "scope": "Comportement des variantes A/B/C ; présentation contrôlée séparément.",
+      "date": "2026-10-01T05:33:02.114Z",
+      "environment": "publication",
+      "browser": "firefox",
+      "channel": "bundled",
+      "browserVersion": "155.0",
+      "playwright": "1.63.0",
+      "node": "v22.12.0",
+      "platform": "darwin 25.3.0 arm64",
+      "command": "BASE_URL=<URL vérifiée> BROWSER=firefox npm test",
+      "sourceRevision": "f38d21693c8f355db5692b9cfdc0f8b8aa102903357c8cf4e7b38ae7a02e93d1",
+      "sourceHashes": {
+        "a.html": "d43a087c6007885509f34928657f8ab0cf16ff43143527b7b3ab0ceb7e731bde",
+        "b.html": "06e6f66d168d6b8c83f3dcdf1aa5469e43d64082b91405fe4ec4622b7ef8ee88",
+        "c.html": "91a31069f49e49fe28daf7f700b9c5b37104df715f97cd5b14d2c994dd7842dc",
+        "experiment.js": "c6adc8745f1f354ecf94ba92789983210c38fd05902621551a46d2ab9d29dc6d",
+        "styles.css": "df1378eb74252364826b20b5cb8120d13decca6a92ffb0ae71f7e0822de424fd",
+        "verify.mjs": "6ce42a378e3afc89550afd63f273e32863723719bc2470ea820aa8a704744dcb",
+        "serve.mjs": "dd192f9e35cdfa6a8c04b4d598fee8299cee8e1f106ab346fdac3b16b67adfed",
+        "package.json": "469482510823f83af3b2bc7da9007badbe3d518a217a66cd67211d09fe6053d0",
+        "package-lock.json": "46d386904e35355dd226fe08a7a7ff99b69173fd2f52a4339c52e87b95918604"
+      },
+      "sourceRevisionMethod": "SHA-256 du manifeste ordonné des pages expérimentales, dépendances et outillage ; index.html, observations.json et fichiers de présentation exclus. Les anciens relevés sans provenanceVersion gardent leur manifeste historique.",
+      "snapshotAPI": "locator.ariaSnapshot(), options par défaut, capturé avant interaction, compteur à zéro",
+      "keyboardMethod": "Contexte neuf par essai ; Tab depuis le document, aucun focus forcé ; keyboard.press pour Entrée/Espace.",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "checks": [
+        {
+          "name": "Source publiée a.html: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée a.html: contenu identique",
+          "actual": "d43a087c6007885509f34928657f8ab0cf16ff43143527b7b3ab0ceb7e731bde",
+          "expected": "d43a087c6007885509f34928657f8ab0cf16ff43143527b7b3ab0ceb7e731bde",
+          "passed": true
+        },
+        {
+          "name": "Source publiée b.html: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée b.html: contenu identique",
+          "actual": "06e6f66d168d6b8c83f3dcdf1aa5469e43d64082b91405fe4ec4622b7ef8ee88",
+          "expected": "06e6f66d168d6b8c83f3dcdf1aa5469e43d64082b91405fe4ec4622b7ef8ee88",
+          "passed": true
+        },
+        {
+          "name": "Source publiée c.html: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée c.html: contenu identique",
+          "actual": "91a31069f49e49fe28daf7f700b9c5b37104df715f97cd5b14d2c994dd7842dc",
+          "expected": "91a31069f49e49fe28daf7f700b9c5b37104df715f97cd5b14d2c994dd7842dc",
+          "passed": true
+        },
+        {
+          "name": "Source publiée experiment.js: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée experiment.js: contenu identique",
+          "actual": "c6adc8745f1f354ecf94ba92789983210c38fd05902621551a46d2ab9d29dc6d",
+          "expected": "c6adc8745f1f354ecf94ba92789983210c38fd05902621551a46d2ab9d29dc6d",
+          "passed": true
+        },
+        {
+          "name": "Source publiée styles.css: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée styles.css: contenu identique",
+          "actual": "df1378eb74252364826b20b5cb8120d13decca6a92ffb0ae71f7e0822de424fd",
+          "expected": "df1378eb74252364826b20b5cb8120d13decca6a92ffb0ae71f7e0822de424fd",
+          "passed": true
+        },
+        {
+          "name": "Source publiée verify.mjs: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée verify.mjs: contenu identique",
+          "actual": "6ce42a378e3afc89550afd63f273e32863723719bc2470ea820aa8a704744dcb",
+          "expected": "6ce42a378e3afc89550afd63f273e32863723719bc2470ea820aa8a704744dcb",
+          "passed": true
+        },
+        {
+          "name": "Source publiée serve.mjs: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée serve.mjs: contenu identique",
+          "actual": "dd192f9e35cdfa6a8c04b4d598fee8299cee8e1f106ab346fdac3b16b67adfed",
+          "expected": "dd192f9e35cdfa6a8c04b4d598fee8299cee8e1f106ab346fdac3b16b67adfed",
+          "passed": true
+        },
+        {
+          "name": "Source publiée package.json: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée package.json: contenu identique",
+          "actual": "469482510823f83af3b2bc7da9007badbe3d518a217a66cd67211d09fe6053d0",
+          "expected": "469482510823f83af3b2bc7da9007badbe3d518a217a66cd67211d09fe6053d0",
+          "passed": true
+        },
+        {
+          "name": "Source publiée package-lock.json: HTTP",
+          "actual": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "Source publiée package-lock.json: contenu identique",
+          "actual": "46d386904e35355dd226fe08a7a7ff99b69173fd2f52a4339c52e87b95918604",
+          "expected": "46d386904e35355dd226fe08a7a7ff99b69173fd2f52a4339c52e87b95918604",
+          "passed": true
+        },
+        {
+          "name": "a: compteur initial",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "a: rôle bouton",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "a: clics successifs",
+          "actual": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "name": "a: remise à zéro",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "a: parcours Tab jusqu’à reset",
+          "actual": [
+            "start",
+            "reset"
+          ],
+          "expected": [
+            "start",
+            "reset"
+          ],
+          "passed": true
+        },
+        {
+          "name": "a: retour Maj+Tab",
+          "actual": "start",
+          "expected": "start",
+          "passed": true
+        },
+        {
+          "name": "b: compteur initial",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "b: rôle bouton",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "name": "b: clics successifs",
+          "actual": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "name": "b: remise à zéro",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "b: parcours Tab jusqu’à reset",
+          "actual": [
+            "start",
+            "reset"
+          ],
+          "expected": [
+            "start",
+            "reset"
+          ],
+          "passed": true
+        },
+        {
+          "name": "b: retour Maj+Tab",
+          "actual": "start",
+          "expected": "start",
+          "passed": true
+        },
+        {
+          "name": "c: compteur initial",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "c: rôle bouton",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "name": "c: clics successifs",
+          "actual": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "name": "c: remise à zéro",
+          "actual": 0,
+          "expected": 0,
+          "passed": true
+        },
+        {
+          "name": "c: parcours Tab jusqu’à reset",
+          "actual": [
+            "start",
+            "command",
+            "reset"
+          ],
+          "expected": [
+            "start",
+            "command",
+            "reset"
+          ],
+          "passed": true
+        },
+        {
+          "name": "c: retour Maj+Tab",
+          "actual": "command",
+          "expected": "command",
+          "passed": true
+        },
+        {
+          "name": "c: focus visible Enter",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "c: activation Enter",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "name": "c: focus visible Space",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "c: activation Space",
+          "actual": 1,
+          "expected": 1,
+          "passed": true
+        },
+        {
+          "name": "Contexte HTML identique hors commande",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Texte visible identique",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Position et dimensions identiques",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Style identique",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Libellé identique",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Aucun tabindex ajouté",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Un gestionnaire click commun sur command",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Aucun gestionnaire clavier ou focus()",
+          "actual": false,
+          "expected": false,
+          "passed": true
+        },
+        {
+          "name": "Avertissement sans JavaScript visible",
+          "actual": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "Aucune erreur JavaScript",
+          "actual": [],
+          "expected": [],
+          "passed": true
+        },
+        {
+          "name": "Aucune réponse HTTP en erreur",
+          "actual": [],
+          "expected": [],
+          "passed": true
+        }
+      ],
+      "variants": [
+        {
+          "variant": "a",
+          "initialCount": 0,
+          "commandSnapshot": "- text: Ajouter au panier",
+          "pageSnapshot": "- banner:\n  - text: ATELIER\n  - link \"Voir le produit\":\n    - /url: \"#product\"\n- main:\n  - region \"Carnet de notes\":\n    - paragraph: Papeterie · Collection essentielle\n    - heading \"Carnet de notes\" [level=1]\n    - paragraph: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n    - text: Ajouter au panier\n  - paragraph:\n    - text: \"Articles dans le panier :\"\n    - status: \"0\"\n  - button \"Vider le panier\"\n  - link \"Retour à la présentation\":\n    - /url: index.html",
+          "clickCounts": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "keyboard": {
+            "reached": false,
+            "enterDelta": null,
+            "spaceDelta": null,
+            "status": "Non testé",
+            "initialFocus": {
+              "tag": "BODY",
+              "id": "",
+              "text": "ATELIERVoir le produit\n  \n    <p class=\"noscript\">JavaScript est désactivé. L’ajout et la remise à z"
+            },
+            "forward": [
+              {
+                "tag": "A",
+                "id": "start",
+                "text": "Voir le produit"
+              },
+              {
+                "tag": "BUTTON",
+                "id": "reset",
+                "text": "Vider le panier"
+              }
+            ],
+            "backward": {
+              "tag": "A",
+              "id": "start",
+              "text": "Voir le produit"
+            },
+            "Enter": {
+              "traversal": [
+                {
+                  "tag": "A",
+                  "id": "start",
+                  "text": "Voir le produit"
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "reset",
+                  "text": "Vider le panier"
+                }
+              ],
+              "status": "Non testé — commande non atteinte par Tab"
+            },
+            "Space": {
+              "traversal": [
+                {
+                  "tag": "A",
+                  "id": "start",
+                  "text": "Voir le produit"
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "reset",
+                  "text": "Vider le panier"
+                }
+              ],
+              "status": "Non testé — commande non atteinte par Tab"
+            }
+          },
+          "errors": [],
+          "buttonRoleCount": 0,
+          "dom": {
+            "tag": "DIV",
+            "role": null,
+            "tabindex": null,
+            "type": null,
+            "text": "Ajouter au panier",
+            "box": {
+              "x": 664,
+              "y": 364.8833312988281,
+              "width": 384.79998779296875,
+              "height": 56
+            },
+            "style": {
+              "font": "600 16px / 24px Arial, Helvetica, sans-serif",
+              "background": "rgb(12, 26, 36)",
+              "color": "rgb(255, 255, 255)",
+              "padding": "14px 24px",
+              "border": "2px solid rgb(12, 26, 36)",
+              "borderRadius": "7px"
+            }
+          },
+          "environmentText": "ATELIER\nVoir le produit\nNOTES\n\nPAPETERIE · COLLECTION ESSENTIELLE\n\nCarnet de notes\n\nUn carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n\nAjouter au panier\n\nArticles dans le panier : 0\n\nVider le panier\nRetour à la présentation"
+        },
+        {
+          "variant": "b",
+          "initialCount": 0,
+          "commandSnapshot": "- button \"Ajouter au panier\"",
+          "pageSnapshot": "- banner:\n  - text: ATELIER\n  - link \"Voir le produit\":\n    - /url: \"#product\"\n- main:\n  - region \"Carnet de notes\":\n    - paragraph: Papeterie · Collection essentielle\n    - heading \"Carnet de notes\" [level=1]\n    - paragraph: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n    - button \"Ajouter au panier\"\n  - paragraph:\n    - text: \"Articles dans le panier :\"\n    - status: \"0\"\n  - button \"Vider le panier\"\n  - link \"Retour à la présentation\":\n    - /url: index.html",
+          "clickCounts": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "keyboard": {
+            "reached": false,
+            "enterDelta": null,
+            "spaceDelta": null,
+            "status": "Non testé",
+            "initialFocus": {
+              "tag": "BODY",
+              "id": "",
+              "text": "ATELIERVoir le produit\n  \n    <p class=\"noscript\">JavaScript est désactivé. L’ajout et la remise à z"
+            },
+            "forward": [
+              {
+                "tag": "A",
+                "id": "start",
+                "text": "Voir le produit"
+              },
+              {
+                "tag": "BUTTON",
+                "id": "reset",
+                "text": "Vider le panier"
+              }
+            ],
+            "backward": {
+              "tag": "A",
+              "id": "start",
+              "text": "Voir le produit"
+            },
+            "Enter": {
+              "traversal": [
+                {
+                  "tag": "A",
+                  "id": "start",
+                  "text": "Voir le produit"
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "reset",
+                  "text": "Vider le panier"
+                }
+              ],
+              "status": "Non testé — commande non atteinte par Tab"
+            },
+            "Space": {
+              "traversal": [
+                {
+                  "tag": "A",
+                  "id": "start",
+                  "text": "Voir le produit"
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "reset",
+                  "text": "Vider le panier"
+                }
+              ],
+              "status": "Non testé — commande non atteinte par Tab"
+            }
+          },
+          "errors": [],
+          "buttonRoleCount": 1,
+          "dom": {
+            "tag": "DIV",
+            "role": "button",
+            "tabindex": null,
+            "type": null,
+            "text": "Ajouter au panier",
+            "box": {
+              "x": 664,
+              "y": 364.8833312988281,
+              "width": 384.79998779296875,
+              "height": 56
+            },
+            "style": {
+              "font": "600 16px / 24px Arial, Helvetica, sans-serif",
+              "background": "rgb(12, 26, 36)",
+              "color": "rgb(255, 255, 255)",
+              "padding": "14px 24px",
+              "border": "2px solid rgb(12, 26, 36)",
+              "borderRadius": "7px"
+            }
+          },
+          "environmentText": "ATELIER\nVoir le produit\nNOTES\n\nPAPETERIE · COLLECTION ESSENTIELLE\n\nCarnet de notes\n\nUn carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n\nAjouter au panier\n\nArticles dans le panier : 0\n\nVider le panier\nRetour à la présentation"
+        },
+        {
+          "variant": "c",
+          "initialCount": 0,
+          "commandSnapshot": "- button \"Ajouter au panier\"",
+          "pageSnapshot": "- banner:\n  - text: ATELIER\n  - link \"Voir le produit\":\n    - /url: \"#product\"\n- main:\n  - region \"Carnet de notes\":\n    - paragraph: Papeterie · Collection essentielle\n    - heading \"Carnet de notes\" [level=1]\n    - paragraph: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n    - button \"Ajouter au panier\"\n  - paragraph:\n    - text: \"Articles dans le panier :\"\n    - status: \"0\"\n  - button \"Vider le panier\"\n  - link \"Retour à la présentation\":\n    - /url: index.html",
+          "clickCounts": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "keyboard": {
+            "reached": true,
+            "enterDelta": 1,
+            "spaceDelta": 1,
+            "status": "Testé après tabulation naturelle",
+            "initialFocus": {
+              "tag": "BODY",
+              "id": "",
+              "text": "ATELIERVoir le produit\n  \n    <p class=\"noscript\">JavaScript est désactivé. L’ajout et la remise à z"
+            },
+            "forward": [
+              {
+                "tag": "A",
+                "id": "start",
+                "text": "Voir le produit"
+              },
+              {
+                "tag": "BUTTON",
+                "id": "command",
+                "text": "Ajouter au panier"
+              },
+              {
+                "tag": "BUTTON",
+                "id": "reset",
+                "text": "Vider le panier"
+              }
+            ],
+            "backward": {
+              "tag": "BUTTON",
+              "id": "command",
+              "text": "Ajouter au panier"
+            },
+            "Enter": {
+              "traversal": [
+                {
+                  "tag": "A",
+                  "id": "start",
+                  "text": "Voir le produit"
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "command",
+                  "text": "Ajouter au panier"
+                }
+              ],
+              "before": 0,
+              "after": 1,
+              "focusStyle": {
+                "visible": true,
+                "outline": "solid",
+                "width": "3px"
+              }
+            },
+            "Space": {
+              "traversal": [
+                {
+                  "tag": "A",
+                  "id": "start",
+                  "text": "Voir le produit"
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "command",
+                  "text": "Ajouter au panier"
+                }
+              ],
+              "before": 0,
+              "after": 1,
+              "focusStyle": {
+                "visible": true,
+                "outline": "solid",
+                "width": "3px"
+              }
+            }
+          },
+          "errors": [],
+          "buttonRoleCount": 1,
+          "dom": {
+            "tag": "BUTTON",
+            "role": null,
+            "tabindex": null,
+            "type": "button",
+            "text": "Ajouter au panier",
+            "box": {
+              "x": 664,
+              "y": 364.8833312988281,
+              "width": 384.79998779296875,
+              "height": 56
+            },
+            "style": {
+              "font": "600 16px / 24px Arial, Helvetica, sans-serif",
+              "background": "rgb(12, 26, 36)",
+              "color": "rgb(255, 255, 255)",
+              "padding": "14px 24px",
+              "border": "2px solid rgb(12, 26, 36)",
+              "borderRadius": "7px"
+            }
+          },
+          "environmentText": "ATELIER\nVoir le produit\nNOTES\n\nPAPETERIE · COLLECTION ESSENTIELLE\n\nCarnet de notes\n\nUn carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n\nAjouter au panier\n\nArticles dans le panier : 0\n\nVider le panier\nRetour à la présentation"
+        }
+      ],
+      "pageErrors": [],
+      "networkErrors": [],
+      "screenReaders": "Non testé",
+      "agents": "Non testé",
+      "passed": true,
+      "baseURL": "https://edikkaweb.github.io/html-aria-agent-demo/",
+      "publishedSourceHashes": {
+        "a.html": "d43a087c6007885509f34928657f8ab0cf16ff43143527b7b3ab0ceb7e731bde",
+        "b.html": "06e6f66d168d6b8c83f3dcdf1aa5469e43d64082b91405fe4ec4622b7ef8ee88",
+        "c.html": "91a31069f49e49fe28daf7f700b9c5b37104df715f97cd5b14d2c994dd7842dc",
+        "experiment.js": "c6adc8745f1f354ecf94ba92789983210c38fd05902621551a46d2ab9d29dc6d",
+        "styles.css": "df1378eb74252364826b20b5cb8120d13decca6a92ffb0ae71f7e0822de424fd",
+        "verify.mjs": "6ce42a378e3afc89550afd63f273e32863723719bc2470ea820aa8a704744dcb",
+        "serve.mjs": "dd192f9e35cdfa6a8c04b4d598fee8299cee8e1f106ab346fdac3b16b67adfed",
+        "package.json": "469482510823f83af3b2bc7da9007badbe3d518a217a66cd67211d09fe6053d0",
+        "package-lock.json": "46d386904e35355dd226fe08a7a7ff99b69173fd2f52a4339c52e87b95918604"
+      }
     }
   ],
   "screenReaders": "Non testé",

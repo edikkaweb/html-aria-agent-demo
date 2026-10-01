@@ -5,11 +5,11 @@
   "selection": "date UTC décroissante, puis index décroissant, sans filtrage de statut",
   "hashes": {
     "index.template.html": "142d70f0494c66bd5e82a492c52b27e5bcc9f27d777d2b1557fd38469764ea84",
-    "observations.json": "47592b08dc59a1d5a27296b5335e260bcd1cb14cfbc11aa8c172a30f1a7a757c",
+    "observations.json": "a428f26b758f1c1b79578b5bb8c754c52a55f9078ecce2cca045d75e0299609f",
     "observations-view.js": "10e7f9235792af867c4372ff2e4d2b3e7645165a2c2bb3e1fb4bf7b073e0865e",
     "results.js": "604d94ca141aa52cb4b4d675a9f760f0b379e6357e59740dc50f13dbcc4278a8",
     "presentation.css": "a5fb3f6943af1970ca353b6070dcf8f73e5a267d2b8e541f71d8207b16e1f50b",
     "render-observations.mjs": "80de93189036c7b8ecdf75a3d867237fd6e70c14c3217fea35bb66426e336d63",
-    "index.html": "bef1f3be88967102528661b2927bdd70f8791da2757997ce714863bacb636ecc"
+    "index.html": "65c7e8ffe34f568381cb415ffc0fc69173420c11360244cb21941b811aab20ef"
   }
 }
