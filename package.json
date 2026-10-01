@@ -6,10 +6,18 @@
   "description": "Trois commandes identiques en apparence, une expérience HTML / ARIA reproductible.",
   "author": "Bertrand Morel — Edikka",
   "license": "MIT",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "start": "node serve.mjs",
-    "test": "node verify.mjs"
+    "test": "node verify.mjs",
+    "build": "node render-observations.mjs",
+    "build:check": "node render-observations.mjs --check",
+    "test:observations": "node --test observations-view.test.mjs",
+    "test:presentation": "node verify-presentation.mjs"
   },
-  "devDependencies": { "playwright": "1.63.0" }
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
 }

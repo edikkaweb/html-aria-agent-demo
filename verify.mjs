@@ -5,23 +5,29 @@ import { createRequire } from 'node:module';
 import os from 'node:os';
 import { fileURLToPath } from 'node:url';
 import { serve } from './serve.mjs';
+import { renderObservations } from './render-observations.mjs';
 
 const root = new URL('.', import.meta.url);
 const require = createRequire(import.meta.url);
 const engine = process.env.BROWSER || 'chromium';
 const channel = process.env.CHANNEL || undefined;
 const remote = process.env.BASE_URL;
-const sourceFiles = ['a.html','b.html','c.html','experiment.js','styles.css','index.html','results.js','verify.mjs','serve.mjs','package.json'];
+const sourceFiles = ['a.html','b.html','c.html','experiment.js','styles.css','verify.mjs','serve.mjs','package.json','package-lock.json'];
 const hashes = {};
 for (const file of sourceFiles) hashes[file] = createHash('sha256').update(await readFile(new URL(file, root))).digest('hex');
 const sourceRevision = createHash('sha256').update(JSON.stringify(hashes)).digest('hex');
+// Fail before running rather than silently replacing an unreadable archive.
+const archiveBefore = await readFile(new URL('observations.json',root),'utf8');
+const observations = JSON.parse(archiveBefore);
+if (!Array.isArray(observations.runs)) throw new Error('Archive invalide');
 const run = {
+  provenanceVersion: 2, scope: 'Comportement des variantes A/B/C ; présentation contrôlée séparément.',
   date: new Date().toISOString(), environment: remote ? 'publication' : 'serveur local sous un chemin de projet',
   browser: engine, channel: channel || 'bundled', browserVersion: 'Non testé',
   playwright: require('playwright/package.json').version, node: process.version,
   platform: `${os.platform()} ${os.release()} ${os.arch()}`,
   command: `${remote ? 'BASE_URL=<URL vérifiée> ' : ''}BROWSER=${engine}${channel ? ` CHANNEL=${channel}` : ''} npm test`,
-  sourceRevision, sourceHashes: hashes, sourceRevisionMethod: 'SHA-256 du manifeste ordonné des fichiers sources et du script de test ; indépendant du commit de publication.',
+  sourceRevision, sourceHashes: hashes, sourceRevisionMethod: 'SHA-256 du manifeste ordonné des pages expérimentales, dépendances et outillage ; index.html, observations.json et fichiers de présentation exclus. Les anciens relevés sans provenanceVersion gardent leur manifeste historique.',
   snapshotAPI: 'locator.ariaSnapshot(), options par défaut, capturé avant interaction, compteur à zéro',
   keyboardMethod: 'Contexte neuf par essai ; Tab depuis le document, aucun focus forcé ; keyboard.press pour Entrée/Espace.',
   viewport: { width: 1280, height: 900 }, checks: [], variants: [], pageErrors: [], networkErrors: [],
@@ -131,17 +137,6 @@ try {
   check('Un gestionnaire click commun sur command',/command\.addEventListener\('click', addOne\)/.test(sharedScript),true);
   check('Aucun gestionnaire clavier ou focus()',/addEventListener\(['"]key|\.focus\(/.test(sharedScript),false);
 
-  for(const width of [390,1280]) {
-    const session=await fresh('index',{viewport:{width,height:900}});
-    await session.page.screenshot({path:fileURLToPath(new URL(`preview-${width}.png`,root)),fullPage:true});
-    const overflow=await session.page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
-    check(`Présentation sans débordement horizontal à ${width}px`,overflow,false);
-    for(const href of await session.page.locator('a[href]').evaluateAll(links=>links.map(link=>link.getAttribute('href')))) {
-      if(href.startsWith('#')) check(`Ancre ${href}`,await session.page.locator(href).count()>0,true);
-      else if(!/^https?:/.test(href)) { const response=await session.page.request.get(new URL(href,base).href); check(`Lien local ${href}`,response.status(),200); }
-    }
-    await session.context.close();
-  }
   const withoutJS=await fresh('c',{javaScriptEnabled:false});
   check('Avertissement sans JavaScript visible',await withoutJS.page.locator('noscript').isVisible(),true);
   await withoutJS.context.close();
@@ -152,10 +147,10 @@ try {
 finally {
   if(browser) await browser.close();
   if(server) await new Promise(resolve=>server.close(resolve));
-  let observations={runs:[],screenReaders:'Non testé',agents:'Non testé'};
-  try { observations=JSON.parse(await readFile(new URL('observations.json',root),'utf8')); } catch {}
+  if (await readFile(new URL('observations.json',root),'utf8') !== archiveBefore) throw new Error('Archive modifiée pendant les essais ; aucune écriture concurrente permise');
   observations.runs.push(run);
   await writeFile(new URL('observations.json',root),JSON.stringify(observations,null,2)+'\n');
+  await renderObservations();
   console.log(JSON.stringify({date:run.date,browser:run.browser,version:run.browserVersion,passed:run.passed,checks:run.checks.length,failures:run.checks.filter(check=>!check.passed),fatal:run.fatal,sourceRevision},null,2));
   if(!run.passed) process.exitCode=1;
 }

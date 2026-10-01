@@ -13,11 +13,19 @@ Les variantes A et B ne doivent pas recevoir de `tabindex`, de `keydown`, de `ke
 3. Envoyer trois clics physiques simulés via `locator.click()` ; relever le compteur après chacun. Cet essai est distinct du clavier.
 4. Dans un nouveau contexte, envoyer `Tab` depuis le document jusqu’à « Vider le panier » ; relever `document.activeElement` après chaque touche. Envoyer `Shift+Tab` et relever le focus.
 5. Repartir d’un contexte neuf pour chaque touche d’activation. Atteindre la commande uniquement par `Tab`. Si elle est atteinte, presser Entrée ou Espace et mesurer l’écart du compteur. Sinon, indiquer « Non testé — commande non atteinte par Tab ». Ne pas donner le focus par script et ne pas substituer un clic à cet essai.
-6. Comparer le contexte et la présentation ; vérifier les liens locaux, le repli sans JavaScript et l’absence de débordement de la présentation à 390 et 1280 px.
+6. Comparer le contexte, les textes, styles et dimensions des variantes ; vérifier l’avertissement métier sans JavaScript. Les vérifications de la page de présentation relèvent de la suite séparée ci-dessous.
 
 `observations.json` conserve tous les relevés des exécutions, leurs assertions et leurs échecs. Une exécution incomplète peut contenir `fatal`. Les essais reproductibles enregistrent les actions déterministes du script ; ils ne sont pas un essai d’agent autonome.
 
 **Attentes de référence, pas observations :** A ne déclare pas de rôle bouton ; B le déclare mais ne fournit pas la mise au focus par Tab ni l’activation clavier ; C apporte ces comportements natifs. Les assertions évaluent cette attente et conservent toute divergence. Un essai négatif au clavier ne devient pas un essai positif de lecteur d’écran.
+
+## Vérifier la présentation sans créer de relevé expérimental
+
+Exécuter `npm run build`, `npm run build:check`, `npm run test:observations`, puis `BROWSER=chromium CHANNEL=chrome npm run test:presentation` (ou `BROWSER=firefox npm run test:presentation`). La génération ne lance aucun essai. La suite de présentation vérifie le rendu avec JavaScript, sans JavaScript, avec JSON bloqué ou invalide, la sélection au clavier, les liens et les métadonnées, aux largeurs 390 et 1280 px. Certains menus natifs macOS ne reçoivent pas les flèches simulées en mode sans fenêtre. Le rapport conserve alors cette limite et contrôle la mise à jour avec `selectOption` : cela ne vaut pas une preuve clavier. Compléter par Tab, flèche bas pour ouvrir, flèche bas pour changer d’option et Entrée dans un navigateur réel. Les captures `preview-*.png` et `presentation-check.json` sont des preuves locales distinctes, exclues de l’archive comportementale. Les fixtures d’échec et d’interruption du modèle ne sont jamais ajoutées à `observations.json`.
+
+Le relevé initial est la dernière date UTC, avec la dernière entrée en cas d’égalité, sans sélectionner uniquement les réussites. Les cellules ne confondent pas zéro mesuré, valeur manquante, commande non atteinte par Tab et parcours interrompu. Le HTML source généré reste la preuve lisible en cas de chargement échoué.
+
+Le contrat de provenance v2 et l’interprétation des anciens manifestes sont détaillés dans le [README](https://github.com/edikkaweb/html-aria-agent-demo/blob/main/README.md#présentation-statique-et-provenance). La génération de la présentation ne change pas les empreintes expérimentales. Les anciens relevés conservent leurs dates, versions, résultats et manifestes, même si ceux-ci incluaient alors la présentation. L’égalité de `locator.ariaSnapshot()` concerne uniquement la commande ciblée dans les configurations archivées ; ce test ne couvre pas Playwright MCP.
 
 ## VoiceOver et Safari — Non testé
 
@@ -45,7 +53,7 @@ Gabarit de relevé manuel : date et fuseau ; URL et empreinte des sources ; conf
 
 ## Publication et contrôle
 
-Publier exclusivement les fichiers de ce projet dans son dépôt public. GitHub Pages peut servir la racine de la branche `main`. Vérifier d’abord l’URL réellement fournie dans les réglages Pages, puis tester `BASE_URL=<URL réelle terminée par /> npm test` et ouvrir la présentation et les trois variantes. Consigner le commit GitHub publié et rapprocher son contenu des empreintes des sources testées. Aucune URL publique ne doit être annoncée avant vérification.
+Publier exclusivement les fichiers de ce projet dans son dépôt public. GitHub Pages peut servir la racine de la branche `main`. Vérifier d’abord l’URL réellement fournie dans les réglages Pages, générer et contrôler le HTML statique avant transfert (`npm run build && npm run build:check`), puis tester `BASE_URL=<URL réelle terminée par /> npm test` et ouvrir la présentation et les trois variantes. Consigner le commit GitHub publié et rapprocher son contenu des empreintes des sources testées. Après ajout des nouveaux relevés, republier les observations et la présentation régénérée, puis exécuter `BASE_URL=<URL réelle terminée par /> npm run test:presentation` sans créer encore un relevé expérimental. Rapprocher les fichiers servis du manifeste de présentation. Le dépôt utilise actuellement `main`, vérifiée le 1er octobre 2026 ; les liens lecteur pointent vers `/blob/main/TESTING.md` et `/blob/main/README.md`. Aucune mise à jour locale ne doit être annoncée comme publiée avant contrôle des octets réellement servis.
 
 ## Texte factuel pour une proposition à Alsacréations
 

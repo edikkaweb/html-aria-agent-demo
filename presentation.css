@@ -1,0 +1,6 @@
+/* Presentation only: experiment styles and intentional defects stay unchanged. */
+#run { width: 100%; max-width: 100%; }
+#run-meta { overflow-wrap: anywhere; }
+#history-status { border-left: 2px solid #526022; padding-left: 12px; }
+#observed td { white-space: normal; }
+.instrument-context { margin-top: 28px; max-width: 78ch; }

@@ -1,3 +1,5 @@
 node_modules/
 .DS_Store
 preview-*.png
+presentation-check.json
+*.tmp
