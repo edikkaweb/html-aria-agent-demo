@@ -4,12 +4,14 @@
   "source": "observations.json",
   "selection": "date UTC décroissante, puis index décroissant, sans filtrage de statut",
   "hashes": {
-    "index.template.html": "142d70f0494c66bd5e82a492c52b27e5bcc9f27d777d2b1557fd38469764ea84",
+    "index.template.html": "f9e9efe4b120a7ba9d9fcf19e32f5a65983b6b6ffda75bda552893259ae36a96",
+    "index-en.html": "e16822d9c1f9cfa1eee09b73660bc256c4e23da775532a5e9ca3d0f701aa0fcf",
+    "favicon.svg": "bc888c3cb8bc837f94e98cbe16e8b5d1f53b790c80e204f9bbc8482d7d75c752",
     "observations.json": "a428f26b758f1c1b79578b5bb8c754c52a55f9078ecce2cca045d75e0299609f",
     "observations-view.js": "10e7f9235792af867c4372ff2e4d2b3e7645165a2c2bb3e1fb4bf7b073e0865e",
     "results.js": "604d94ca141aa52cb4b4d675a9f760f0b379e6357e59740dc50f13dbcc4278a8",
     "presentation.css": "a5fb3f6943af1970ca353b6070dcf8f73e5a267d2b8e541f71d8207b16e1f50b",
-    "render-observations.mjs": "80de93189036c7b8ecdf75a3d867237fd6e70c14c3217fea35bb66426e336d63",
-    "index.html": "65c7e8ffe34f568381cb415ffc0fc69173420c11360244cb21941b811aab20ef"
+    "render-observations.mjs": "74c2098045712b04397e03b4598f679c870f00857891bd33b6368d96adf1c342",
+    "index.html": "3eceab56b3906efb999b324e9572410aead0bb0098a64933dcf43455f7805485"
   }
 }

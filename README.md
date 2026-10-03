@@ -1,5 +1,9 @@
 # HTML, ARIA et agents : même apparence, trois réalités
 
+[Essayer en français](https://edikkaweb.github.io/html-aria-agent-demo/) · [English guide](https://edikkaweb.github.io/html-aria-agent-demo/index-en.html)
+
+![Aperçu de la démonstration Edikka](docs/preview.jpg)
+
 Une démonstration de [Bertrand Morel — Edikka](https://www.edikka.com/agence/bertrand-morel).
 
 Trois implémentations de « Ajouter au panier » partagent le même environnement, le même style et un même gestionnaire `click` : un `div`, un `div role="button"` et un `button type="button"`. Les deux premières sont volontairement incomplètes. Ce projet rend leurs différences observables sans ajouter de gestionnaire clavier.
@@ -90,3 +94,5 @@ Sources consultées le 1er octobre 2026. Code original sous [licence MIT](LICENS
 Three visually identical “Add to cart” controls compare a clickable `div`, a `div` with `role="button"`, and a native `button`. A shared click handler adds exactly one item. Deterministic tests record pointer activation, natural keyboard traversal, keyboard activation, and Playwright ARIA snapshots. Raw results are kept separate from expected behavior. Screen-reader and independent AI-agent trials are **Not tested** until actual observations are recorded. The experiment does not measure full accessibility conformance, SEO rankings, or AI citations.
 
 The static presentation keeps archived observations available without JavaScript or when JSON loading fails. It defaults to the latest dated run, including failures. This is a practical companion to the [Professional website accessibility foundation](https://www.edikka.com/en/library#instrument-professional-website-accessibility-foundation); the demonstration itself is in French. Its MIT code licence and package version remain separate from the catalogue’s CC BY 4.0 licence and instrument version.
+
+[Contribuer / Contributing](CONTRIBUTING.md) · [Toutes les démonstrations / All experiments](https://edikkaweb.github.io/)
