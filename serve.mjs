@@ -9,8 +9,10 @@ export function serve({ port = 4173, root = fileURLToPath(new URL('.', import.me
     const path = new URL(request.url, 'http://localhost').pathname;
     if (path === '/' || path === prefix.slice(0, -1)) { response.writeHead(302, { Location: prefix }); response.end(); return; }
     const relative = path.startsWith(prefix) ? decodeURIComponent(path.slice(prefix.length)) : '';
-    const name = relative || 'index.html';
-    if (!path.startsWith(prefix) || basename(name) !== name || name.startsWith('.')) { response.writeHead(404); response.end('Not found'); return; }
+    const name = relative ? (relative.endsWith('/') ? relative + 'index.html' : relative) : 'index.html';
+    const parts = name.split('/');
+    const allowedPath = basename(name) === name || name.startsWith('preuves/');
+    if (!path.startsWith(prefix) || !allowedPath || parts.some(part => !part || part.startsWith('.') || part === 'node_modules' || part === 'runs')) { response.writeHead(404); response.end('Not found'); return; }
     try { const bytes = await readFile(resolve(root, name)); response.writeHead(200, { 'Content-Type': types[name.split('.').pop()] || 'text/plain; charset=utf-8', 'Cache-Control': 'no-store' }); response.end(bytes); }
     catch { response.writeHead(404); response.end('Not found'); }
   });

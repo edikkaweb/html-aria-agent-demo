@@ -3,3 +3,8 @@ node_modules/
 preview-*.png
 presentation-check.json
 *.tmp
+
+# Local output from the independent evidence-pack runner.
+preuves/*/runs/
+preuves/*/test-artifacts/
+preuves/*/keyboard-results.json

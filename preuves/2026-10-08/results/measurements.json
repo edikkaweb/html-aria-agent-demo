@@ -1,0 +1,926 @@
+{
+  "date": "2026-10-08T14:40:17.883Z",
+  "node": "v24.19.0",
+  "os": {
+    "platform": "darwin",
+    "release": "25.3.0",
+    "arch": "arm64"
+  },
+  "versions": {
+    "playwright": "1.63.0",
+    "mcp": "0.0.68",
+    "mcpPlaywright": "1.59.0-alpha-1771104257000",
+    "lighthouse": "13.5.0"
+  },
+  "sources": {
+    "original": {
+      "a.html": "d43a087c6007885509f34928657f8ab0cf16ff43143527b7b3ab0ceb7e731bde",
+      "b.html": "06e6f66d168d6b8c83f3dcdf1aa5469e43d64082b91405fe4ec4622b7ef8ee88",
+      "c.html": "91a31069f49e49fe28daf7f700b9c5b37104df715f97cd5b14d2c994dd7842dc",
+      "styles.css": "df1378eb74252364826b20b5cb8120d13decca6a92ffb0ae71f7e0822de424fd",
+      "experiment.js": "c6adc8745f1f354ecf94ba92789983210c38fd05902621551a46d2ab9d29dc6d"
+    },
+    "contrast": {
+      "a.html": "d43a087c6007885509f34928657f8ab0cf16ff43143527b7b3ab0ceb7e731bde",
+      "b.html": "06e6f66d168d6b8c83f3dcdf1aa5469e43d64082b91405fe4ec4622b7ef8ee88",
+      "c.html": "91a31069f49e49fe28daf7f700b9c5b37104df715f97cd5b14d2c994dd7842dc",
+      "styles.css": "c90d80594ac5fbde8c50a6c5e55c0b3e10d1956c3f66c662c38dedbe97b1c504",
+      "experiment.js": "c6adc8745f1f354ecf94ba92789983210c38fd05902621551a46d2ab9d29dc6d"
+    },
+    "no-pointer": {
+      "a.html": "d43a087c6007885509f34928657f8ab0cf16ff43143527b7b3ab0ceb7e731bde",
+      "b.html": "06e6f66d168d6b8c83f3dcdf1aa5469e43d64082b91405fe4ec4622b7ef8ee88",
+      "c.html": "91a31069f49e49fe28daf7f700b9c5b37104df715f97cd5b14d2c994dd7842dc",
+      "styles.css": "07fd40d601a28e93bf1820c88a3ea6e8cc8bb3aad5063b64d16b4305ea9ae118",
+      "experiment.js": "c6adc8745f1f354ecf94ba92789983210c38fd05902621551a46d2ab9d29dc6d"
+    }
+  },
+  "mcp": [
+    {
+      "dataset": "original",
+      "variant": "a",
+      "line": "- generic [ref=e14] [cursor=pointer]: Ajouter au panier",
+      "after": {
+        "count": "1",
+        "tabIndex": -1
+      }
+    },
+    {
+      "dataset": "original",
+      "variant": "b",
+      "line": "- button \"Ajouter au panier\" [ref=e14] [cursor=pointer]",
+      "after": {
+        "count": "1",
+        "tabIndex": -1
+      }
+    },
+    {
+      "dataset": "original",
+      "variant": "c",
+      "line": "- button \"Ajouter au panier\" [ref=e14] [cursor=pointer]",
+      "after": {
+        "count": "1",
+        "tabIndex": 0
+      }
+    },
+    {
+      "dataset": "no-pointer",
+      "variant": "a",
+      "line": "- generic [ref=e14]: Ajouter au panier",
+      "after": {
+        "count": "1",
+        "tabIndex": -1
+      }
+    },
+    {
+      "dataset": "no-pointer",
+      "variant": "b",
+      "line": "- button \"Ajouter au panier\" [ref=e14]",
+      "after": {
+        "count": "1",
+        "tabIndex": -1
+      }
+    },
+    {
+      "dataset": "no-pointer",
+      "variant": "c",
+      "line": "- button \"Ajouter au panier\" [ref=e14]",
+      "after": {
+        "count": "1",
+        "tabIndex": 0
+      }
+    }
+  ],
+  "keyboard": [
+    {
+      "dataset": "original",
+      "variant": "a",
+      "exit": 1,
+      "stats": {
+        "startTime": "2026-10-08T14:40:44.127Z",
+        "duration": 4269.921,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "stderr": "(node:78469) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:78481) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "dataset": "original",
+      "variant": "b",
+      "exit": 1,
+      "stats": {
+        "startTime": "2026-10-08T14:40:48.598Z",
+        "duration": 4319.215,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "stderr": "(node:78499) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:78515) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "dataset": "original",
+      "variant": "c",
+      "exit": 0,
+      "stats": {
+        "startTime": "2026-10-08T14:40:53.114Z",
+        "duration": 755.1500000000001,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "stderr": "(node:78533) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "dataset": "contrast",
+      "variant": "a",
+      "exit": 1,
+      "stats": {
+        "startTime": "2026-10-08T14:40:54.072Z",
+        "duration": 4216.495,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "stderr": "(node:78551) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:78570) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "dataset": "contrast",
+      "variant": "b",
+      "exit": 1,
+      "stats": {
+        "startTime": "2026-10-08T14:40:58.487Z",
+        "duration": 4187.879,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "stderr": "(node:78583) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:78595) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "dataset": "contrast",
+      "variant": "c",
+      "exit": 0,
+      "stats": {
+        "startTime": "2026-10-08T14:41:02.875Z",
+        "duration": 737.874,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "stderr": "(node:78610) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    }
+  ],
+  "lighthouse": [
+    {
+      "dataset": "original",
+      "variant": "a",
+      "score": 0.95,
+      "agentTree": {
+        "id": "agent-accessibility-tree",
+        "title": "Accessibility tree is well-formed",
+        "description": "A well-formed [accessibility tree](https://developer.chrome.com/docs/lighthouse/agentic-browsing/accessibility-for-agents) helps AI agents to navigate and interact with the page.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "All audits passed"
+      },
+      "failures": [
+        {
+          "id": "color-contrast",
+          "score": 0,
+          "weight": 7,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-0-DIV",
+                  "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV",
+                  "selector": "main.test-shell > section#product > div.product-art > div.notebook",
+                  "boundingRect": {
+                    "top": 184,
+                    "bottom": 412,
+                    "left": 336,
+                    "right": 511,
+                    "width": 176,
+                    "height": 228
+                  },
+                  "snippet": "<div class=\"notebook\">",
+                  "nodeLabel": "NOTES",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.36 (foreground color: #f7f8ee, background color: #687b40, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "impact": "serious",
+              "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143",
+                "TTv5",
+                "TT13.c",
+                "EN-301-549",
+                "EN-9.1.4.3",
+                "ACT",
+                "RGAAv4",
+                "RGAA-3.2.1"
+              ]
+            }
+          }
+        }
+      ],
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 4166.5,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1280,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "accessibility",
+          "agentic-browsing"
+        ],
+        "skipAudits": null
+      }
+    },
+    {
+      "dataset": "original",
+      "variant": "b",
+      "score": 0.96,
+      "agentTree": {
+        "id": "agent-accessibility-tree",
+        "title": "Accessibility tree is well-formed",
+        "description": "A well-formed [accessibility tree](https://developer.chrome.com/docs/lighthouse/agentic-browsing/accessibility-for-agents) helps AI agents to navigate and interact with the page.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "All audits passed"
+      },
+      "failures": [
+        {
+          "id": "color-contrast",
+          "score": 0,
+          "weight": 7,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-0-DIV",
+                  "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV",
+                  "selector": "main.test-shell > section#product > div.product-art > div.notebook",
+                  "boundingRect": {
+                    "top": 184,
+                    "bottom": 412,
+                    "left": 336,
+                    "right": 511,
+                    "width": 176,
+                    "height": 228
+                  },
+                  "snippet": "<div class=\"notebook\">",
+                  "nodeLabel": "NOTES",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.36 (foreground color: #f7f8ee, background color: #687b40, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "impact": "serious",
+              "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143",
+                "TTv5",
+                "TT13.c",
+                "EN-301-549",
+                "EN-9.1.4.3",
+                "ACT",
+                "RGAAv4",
+                "RGAA-3.2.1"
+              ]
+            }
+          }
+        }
+      ],
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 4152,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1280,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "accessibility",
+          "agentic-browsing"
+        ],
+        "skipAudits": null
+      }
+    },
+    {
+      "dataset": "original",
+      "variant": "c",
+      "score": 0.95,
+      "agentTree": {
+        "id": "agent-accessibility-tree",
+        "title": "Accessibility tree is well-formed",
+        "description": "A well-formed [accessibility tree](https://developer.chrome.com/docs/lighthouse/agentic-browsing/accessibility-for-agents) helps AI agents to navigate and interact with the page.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "All audits passed"
+      },
+      "failures": [
+        {
+          "id": "color-contrast",
+          "score": 0,
+          "weight": 7,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-0-DIV",
+                  "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV",
+                  "selector": "main.test-shell > section#product > div.product-art > div.notebook",
+                  "boundingRect": {
+                    "top": 184,
+                    "bottom": 412,
+                    "left": 336,
+                    "right": 511,
+                    "width": 176,
+                    "height": 228
+                  },
+                  "snippet": "<div class=\"notebook\">",
+                  "nodeLabel": "NOTES",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.36 (foreground color: #f7f8ee, background color: #687b40, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "impact": "serious",
+              "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143",
+                "TTv5",
+                "TT13.c",
+                "EN-301-549",
+                "EN-9.1.4.3",
+                "ACT",
+                "RGAAv4",
+                "RGAA-3.2.1"
+              ]
+            }
+          }
+        }
+      ],
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 4158,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1280,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "accessibility",
+          "agentic-browsing"
+        ],
+        "skipAudits": null
+      }
+    },
+    {
+      "dataset": "contrast",
+      "variant": "a",
+      "score": 1,
+      "agentTree": {
+        "id": "agent-accessibility-tree",
+        "title": "Accessibility tree is well-formed",
+        "description": "A well-formed [accessibility tree](https://developer.chrome.com/docs/lighthouse/agentic-browsing/accessibility-for-agents) helps AI agents to navigate and interact with the page.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "All audits passed"
+      },
+      "failures": [],
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 4138,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1280,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "accessibility",
+          "agentic-browsing"
+        ],
+        "skipAudits": null
+      }
+    },
+    {
+      "dataset": "contrast",
+      "variant": "b",
+      "score": 1,
+      "agentTree": {
+        "id": "agent-accessibility-tree",
+        "title": "Accessibility tree is well-formed",
+        "description": "A well-formed [accessibility tree](https://developer.chrome.com/docs/lighthouse/agentic-browsing/accessibility-for-agents) helps AI agents to navigate and interact with the page.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "All audits passed"
+      },
+      "failures": [],
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 4113,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1280,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "accessibility",
+          "agentic-browsing"
+        ],
+        "skipAudits": null
+      }
+    },
+    {
+      "dataset": "contrast",
+      "variant": "c",
+      "score": 1,
+      "agentTree": {
+        "id": "agent-accessibility-tree",
+        "title": "Accessibility tree is well-formed",
+        "description": "A well-formed [accessibility tree](https://developer.chrome.com/docs/lighthouse/agentic-browsing/accessibility-for-agents) helps AI agents to navigate and interact with the page.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "All audits passed"
+      },
+      "failures": [],
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "benchmarkIndex": 4156.5,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1280,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "accessibility",
+          "agentic-browsing"
+        ],
+        "skipAudits": null
+      }
+    }
+  ],
+  "direct": [
+    {
+      "dataset": "original",
+      "variant": "a",
+      "snapshot": "- text: Ajouter au panier",
+      "tab": [
+        "start",
+        "reset",
+        "home"
+      ],
+      "dom": {
+        "tag": "DIV",
+        "tabIndex": -1,
+        "role": null,
+        "cursor": "pointer"
+      }
+    },
+    {
+      "dataset": "original",
+      "variant": "b",
+      "snapshot": "- button \"Ajouter au panier\"",
+      "tab": [
+        "start",
+        "reset",
+        "home"
+      ],
+      "dom": {
+        "tag": "DIV",
+        "tabIndex": -1,
+        "role": "button",
+        "cursor": "pointer"
+      }
+    },
+    {
+      "dataset": "original",
+      "variant": "c",
+      "snapshot": "- button \"Ajouter au panier\"",
+      "tab": [
+        "start",
+        "command",
+        "reset"
+      ],
+      "dom": {
+        "tag": "BUTTON",
+        "tabIndex": 0,
+        "role": null,
+        "cursor": "pointer"
+      }
+    },
+    {
+      "dataset": "contrast",
+      "variant": "a",
+      "snapshot": "- text: Ajouter au panier",
+      "tab": [
+        "start",
+        "reset",
+        "home"
+      ],
+      "dom": {
+        "tag": "DIV",
+        "tabIndex": -1,
+        "role": null,
+        "cursor": "pointer"
+      }
+    },
+    {
+      "dataset": "contrast",
+      "variant": "b",
+      "snapshot": "- button \"Ajouter au panier\"",
+      "tab": [
+        "start",
+        "reset",
+        "home"
+      ],
+      "dom": {
+        "tag": "DIV",
+        "tabIndex": -1,
+        "role": "button",
+        "cursor": "pointer"
+      }
+    },
+    {
+      "dataset": "contrast",
+      "variant": "c",
+      "snapshot": "- button \"Ajouter au panier\"",
+      "tab": [
+        "start",
+        "command",
+        "reset"
+      ],
+      "dom": {
+        "tag": "BUTTON",
+        "tabIndex": 0,
+        "role": null,
+        "cursor": "pointer"
+      }
+    }
+  ],
+  "chrome": "155.0.8059.39"
+}

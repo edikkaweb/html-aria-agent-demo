@@ -10,6 +10,14 @@ Trois implémentations de « Ajouter au panier » partagent le même environneme
 
 **Question ouverte : un agent peut-il réussir une action qui reste inaccessible au clavier ?** Les tests déterministes ne répondent pas à cette question. Les essais d’agents indépendants et de lecteurs d’écran restent **Non testé** tant qu’aucun relevé correspondant n’est publié.
 
+## Complément du 8 octobre 2026 : MCP, Lighthouse et clavier
+
+[Lire les nouvelles preuves](https://edikkaweb.github.io/html-aria-agent-demo/preuves/2026-10-08/) · [English evidence guide](https://edikkaweb.github.io/html-aria-agent-demo/preuves/2026-10-08/index-en.html) · [Scripts et résultats bruts](preuves/2026-10-08/README.md)
+
+Les appels réels de Playwright MCP cliquent les trois variantes, alors que Tab n’atteint que le bouton natif. Lighthouse 13.5.0 donne 95/96/95 sur les fichiers d’origine et 100/100 aux trois pages après le seul changement de couleur du carnet. Les tests clavier conservent leurs échecs sur A/B. Le contre-essai `cursor: default` supprime l’annotation de pointeur dans MCP, sans supprimer la référence ni le clic.
+
+Ces mesures locales, réalisées dans Chrome 155.0.8059.39, complètent les archives du 1er octobre sans les modifier. Il s’agit d’appels d’outils déterministes, pas d’essais d’agents autonomes ou de lecteurs d’écran. Le « complément V2 » concerne le dossier de preuves ; la version des variantes reste 1.0.0.
+
 [Essayer la démonstration en ligne](https://edikkaweb.github.io/html-aria-agent-demo/) · [Code et historique sur GitHub](https://github.com/edikkaweb/html-aria-agent-demo).
 
 Cette expérience est un complément du [Socle accessibilité d’un site professionnel](https://www.edikka.com/bibliotheque#instrument-professional-website-accessibility-foundation). L’instrument conserve sa propre version (voir sa fiche) ; la version déclarée de la démo est **1.0.0** dans `package.json`. Les changements de présentation ne créent pas une nouvelle édition scientifique ni une nouvelle validation des variantes. Le catalogue est sous CC BY 4.0 ; le code original de ce dépôt reste sous **MIT**.
@@ -44,7 +52,7 @@ Contrôle de cette édition sur GitHub Pages le 1er octobre 2026 : Chrome 154.0.
 
 **État historique publié, avant les améliorations de présentation ci-dessous.** Vérifiée localement puis sur GitHub Pages le 1er octobre 2026 : 65 contrôles locaux et 85 contrôles de production par navigateur, tous réussis. Les contrôles en ligne incluent les empreintes SHA-256 des 10 fichiers sources et de test. Les observations brutes identifient la révision `182c07eaee4d8cc466d59d1dc09d9dc252021052584ac062edb804ba54373c82` du candidat publié.
 
-Les premières exécutions du 1er octobre 2026, avec Chrome 154.0.8037.59 et Firefox 155.0 sur macOS, donnent les mêmes observations : trois clics produisent 0 → 1 → 2 → 3 sur A, B et C ; Tab ignore A et B ; C est atteinte et ajoute une unité avec Entrée comme avec Espace. B et C sont toutes deux restituées comme `button "Ajouter au panier"` par `locator.ariaSnapshot()` de Playwright **ciblé sur `#command`** ; A est restituée comme texte. L’égalité concerne cette commande dans ces configurations archivées, pas les pages entières ni tous les agents. Playwright MCP n’est pas testé. Ces résultats concernent uniquement ces configurations. Les activations clavier de A/B sont marquées **Non testé — commande non atteinte par Tab** ; leur absence du parcours est, elle, observée.
+Les premières exécutions du 1er octobre 2026, avec Chrome 154.0.8037.59 et Firefox 155.0 sur macOS, donnent les mêmes observations : trois clics produisent 0 → 1 → 2 → 3 sur A, B et C ; Tab ignore A et B ; C est atteinte et ajoute une unité avec Entrée comme avec Espace. B et C sont toutes deux restituées comme `button "Ajouter au panier"` par `locator.ariaSnapshot()` de Playwright **ciblé sur `#command`** ; A est restituée comme texte. L’égalité concerne cette commande dans ces configurations archivées, pas les pages entières ni tous les agents. Playwright MCP n’était pas testé dans ces relevés du 1er octobre ; ses appels déterministes sont documentés séparément dans le [complément du 8 octobre](preuves/2026-10-08/). Ces résultats concernent uniquement ces configurations. Les activations clavier de A/B sont marquées **Non testé — commande non atteinte par Tab** ; leur absence du parcours est, elle, observée.
 
 Selon la sémantique HTML et les pratiques ARIA, un rôle exprime la nature d’un élément mais ne crée pas, à lui seul, son comportement clavier. Un bouton natif fournit le comportement adapté. Les résultats effectivement obtenus se lisent dans le tableau de la présentation et dans le JSON ; ils ne sont pas remplacés par cette attente.
 
@@ -90,6 +98,8 @@ Le projet n’appelle aucune API IA et n’utilise aucun framework, cookie, stoc
 Sources consultées le 1er octobre 2026. Code original sous [licence MIT](LICENSE).
 
 ## English summary
+
+[Additional evidence, 8 October 2026](https://edikkaweb.github.io/html-aria-agent-demo/preuves/2026-10-08/index-en.html): actual Playwright MCP calls, six Lighthouse reports and keyboard tests that fail for A/B and pass for C. These deterministic tool calls do not measure an autonomous agent’s decisions. Original archives and experimental variants are preserved.
 
 Three visually identical “Add to cart” controls compare a clickable `div`, a `div` with `role="button"`, and a native `button`. A shared click handler adds exactly one item. Deterministic tests record pointer activation, natural keyboard traversal, keyboard activation, and Playwright ARIA snapshots. Raw results are kept separate from expected behavior. Screen-reader and independent AI-agent trials are **Not tested** until actual observations are recorded. The experiment does not measure full accessibility conformance, SEO rankings, or AI citations.
 

@@ -1,0 +1,82 @@
+{
+  "dataset": "no-pointer",
+  "variant": "b",
+  "calls": [
+    {
+      "name": "browser_navigate",
+      "arguments": {
+        "url": "http://127.0.0.1:58176/no-pointer/b.html"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "### Ran Playwright code\n```js\nawait page.goto('http://127.0.0.1:58176/no-pointer/b.html');\n```\n### Page\n- Page URL: http://127.0.0.1:58176/no-pointer/b.html\n- Page Title: Carnet de notes — Panier\n- Console: 1 errors, 0 warnings\n### Snapshot\n```yaml\n- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region \"Carnet de notes\" [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - button \"Ajouter au panier\" [ref=e14]\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html\n```\n### Events\n- New console entries: results/mcp-output/console-2026-10-08T14-40-36-595Z.log#L1\n- [ERROR] Failed to load resource: the server respon...04 (Not Found) @ http://127.0.0.1:58176/favicon.ico:0"
+          }
+        ]
+      }
+    },
+    {
+      "name": "browser_snapshot",
+      "arguments": {},
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "### Page\n- Page URL: http://127.0.0.1:58176/no-pointer/b.html\n- Page Title: Carnet de notes — Panier\n- Console: 1 errors, 0 warnings\n### Snapshot\n```yaml\n- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region \"Carnet de notes\" [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - button \"Ajouter au panier\" [ref=e14]\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html\n```"
+          }
+        ]
+      }
+    },
+    {
+      "name": "browser_evaluate",
+      "arguments": {
+        "function": "() => ({count:document.querySelector(\"#count\").textContent,tabIndex:document.querySelector(\"#command\").tabIndex,userAgent:navigator.userAgent})"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "### Result\n{\n  \"count\": \"0\",\n  \"tabIndex\": -1,\n  \"userAgent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36\"\n}\n### Ran Playwright code\n```js\nawait page.evaluate('() => ({count:document.querySelector(\"#count\").textContent,tabIndex:document.querySelector(\"#command\").tabIndex,userAgent:navigator.userAgent})');\n```"
+          }
+        ]
+      }
+    },
+    {
+      "name": "browser_click",
+      "arguments": {
+        "element": "Ajouter au panier",
+        "ref": "e14"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "### Ran Playwright code\n```js\nawait page.getByRole('button', { name: 'Ajouter au panier' }).click();\n```\n### Page\n- Page URL: http://127.0.0.1:58176/no-pointer/b.html\n- Page Title: Carnet de notes — Panier\n- Console: 1 errors, 0 warnings\n### Snapshot\n```yaml\n- <changed> status [ref=e17]: \"1\"\n```"
+          }
+        ]
+      }
+    },
+    {
+      "name": "browser_evaluate",
+      "arguments": {
+        "function": "() => ({count:document.querySelector(\"#count\").textContent,tabIndex:document.querySelector(\"#command\").tabIndex})"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "### Result\n{\n  \"count\": \"1\",\n  \"tabIndex\": -1\n}\n### Ran Playwright code\n```js\nawait page.evaluate('() => ({count:document.querySelector(\"#count\").textContent,tabIndex:document.querySelector(\"#command\").tabIndex})');\n```"
+          }
+        ]
+      }
+    }
+  ],
+  "line": "- button \"Ajouter au panier\" [ref=e14]",
+  "ref": "e14",
+  "after": {
+    "count": "1",
+    "tabIndex": -1
+  },
+  "stderr": ""
+}

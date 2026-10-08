@@ -1,5 +1,11 @@
 # Protocole de vérification
 
+## Campagne complémentaire du 8 octobre 2026
+
+Le [dossier MCP, Lighthouse et clavier](preuves/2026-10-08/README.md) conserve séparément les scripts, versions et rapports de cette campagne locale. Les tests A/B y échouent effectivement avant activation ; C réussit pour Entrée et Espace. Les appels du serveur MCP sont déterministes et ne remplacent pas le protocole d’agent indépendant décrit dans ce document. Les données historiques ci-dessous sont préservées.
+
+English: [read the additional evidence](preuves/2026-10-08/index-en.html). This dated campaign uses actual MCP tool calls and preserves keyboard-test failures; it does not measure an autonomous agent.
+
 ## Variables contrôlées
 
 Même contenu, décor, ordre des éléments, libellé, dimensions, état initial et logique métier. Seule la commande diffère. Les fichiers HTML sont comparés après remplacement de cette seule commande par un marqueur commun. Les textes visibles, styles calculés, positions et dimensions sont également comparés.
