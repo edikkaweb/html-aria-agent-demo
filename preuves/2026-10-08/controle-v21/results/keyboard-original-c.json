@@ -1,0 +1,182 @@
+{
+  "config": {
+    "argv": [
+      "/Users/bertrand/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/private/tmp/alsacreations-v21-20261008/reproduction-v21/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      "/private/tmp/alsacreations-v21-20261008/reproduction-v21/playwright.config.cjs"
+    ],
+    "configFile": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/playwright.config.cjs",
+    "rootDir": "/private/tmp/alsacreations-v21-20261008/reproduction-v21",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/test-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/private/tmp/alsacreations-v21-20261008/reproduction-v21",
+        "testIgnore": [],
+        "testMatch": [
+          "keyboard.spec.cjs"
+        ],
+        "timeout": 15000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/test-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/private/tmp/alsacreations-v21-20261008/reproduction-v21",
+        "snapshotDir": "/private/tmp/alsacreations-v21-20261008/reproduction-v21",
+        "testIgnore": [],
+        "testMatch": "keyboard.spec.cjs",
+        "timeout": 15000,
+        "use": {
+          "baseURL": "http://127.0.0.1:52691/original/",
+          "channel": "chrome",
+          "headless": true,
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "locale": "fr-FR"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/results/keyboard-original-c.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "keyboard.spec.cjs",
+      "file": "keyboard.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Tab atteint le bouton ; Enter ajoute un article",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 15000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 201,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-08T19:22:48.564Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd363ba3b6c5c17ad62b-ac37e8979140a41b87ab",
+          "file": "keyboard.spec.cjs",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "Tab atteint le bouton ; Space ajoute un article",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 15000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 145,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-08T19:22:48.952Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd363ba3b6c5c17ad62b-78d75dfdd3bd2a92827c",
+          "file": "keyboard.spec.cjs",
+          "line": 6,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-08T19:22:48.388Z",
+    "duration": 781.429,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

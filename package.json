@@ -16,8 +16,8 @@
     "build:check": "node render-observations.mjs --check",
     "test:observations": "node --test observations-view.test.mjs",
     "test:presentation": "node verify-presentation.mjs",
-    "build:proofs": "node preuves/2026-10-08/render.mjs",
-    "test:proofs": "node preuves/2026-10-08/render.mjs --check"
+    "build:proofs": "node preuves/2026-10-08/controle-v21/render.mjs && node preuves/2026-10-08/render.mjs",
+    "test:proofs": "node preuves/2026-10-08/controle-v21/render.mjs --check && node preuves/2026-10-08/render.mjs --check"
   },
   "devDependencies": {
     "playwright": "1.63.0"

@@ -1,0 +1,21 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: ATELIER
+      - link "Voir le produit" [ref=e5] [cursor=pointer]:
+        - /url: "#product"
+  - main [ref=e6]:
+    - region [ref=e7]:
+      - generic [ref=e9]: NOTES
+      - generic [ref=e10]:
+        - paragraph [ref=e11]: Papeterie · Collection essentielle
+        - heading "Carnet de notes" [level=1] [ref=e12]
+        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.
+        - button "Ajouter au panier" [ref=e14]
+    - generic [ref=e15]:
+      - paragraph [ref=e16]:
+        - text: "Articles dans le panier :"
+        - status [ref=e17]: "0"
+      - button "Vider le panier" [ref=e18] [cursor=pointer]
+    - link "Retour à la présentation" [ref=e20] [cursor=pointer]:
+      - /url: index.html

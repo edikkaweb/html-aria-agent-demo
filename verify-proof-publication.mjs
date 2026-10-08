@@ -37,10 +37,25 @@ try{
   const links=await p.locator('a[href]').evaluateAll(as=>as.map(a=>a.href).filter(h=>h.startsWith(location.origin)&&!h.includes('#')));
   for(const href of new Set(links))check('Lien '+href,(await c.request.get(href)).status(),200);
   await p.keyboard.press('Tab');check('Lien d’évitement',await p.evaluate(()=>document.activeElement.className),'skip');
-  await p.keyboard.press('Enter');await p.keyboard.press('Tab');check('Navigation du dossier',await p.evaluate(()=>document.activeElement.getAttribute('href')),'#summary');
+  await p.keyboard.press('Enter');await p.keyboard.press('Tab');check('Découverte clavier du complément',await p.evaluate(()=>document.activeElement.getAttribute('href')),'controle-v21/'+(lang==='fr'?'index.html':'index-en.html'));await p.keyboard.press('Tab');check('Navigation du dossier',await p.evaluate(()=>document.activeElement.getAttribute('href')),'#summary');
   if(width===390){await p.locator('.table-scroll').scrollIntoViewIfNeeded();const before=await p.locator('.table-scroll').evaluate(el=>el.scrollLeft);await p.locator('.table-scroll').focus();await p.keyboard.press('ArrowRight');await p.waitForTimeout(150);check('Tableau défilable au clavier',await p.locator('.table-scroll').evaluate(el=>el.scrollLeft>0),true);}
   if(js)await p.screenshot({path:path.join(os.tmpdir(),`alsacreations-preuves-${lang}-${width}${process.env.BASE_URL?'-production':''}.png`),fullPage:true});
   r.pages.push({lang,width,javaScript:js,passed:true});await c.close();
+ }
+ for(const lang of ['fr','en'])for(const width of [390,1280])for(const js of [true,false]){
+  const url=base+'preuves/2026-10-08/controle-v21/'+(lang==='fr'?'':'index-en.html');
+  const c=await browser.newContext({viewport:{width,height:900},javaScriptEnabled:js});const p=await c.newPage();p.on('pageerror',e=>r.errors.push(e.message));
+  check('Complément HTTP',(await p.goto(url)).status(),200);check('Complément langue',await p.locator('html').getAttribute('lang'),lang);
+  check('Complément largeur',await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+  check('Complément tableaux',await p.locator('.table-scroll').evaluateAll(es=>es.every(e=>e.scrollWidth<=e.clientWidth+1)),true);
+  check('Complément canonical',await p.locator('link[rel="canonical"]').getAttribute('href'),'https://edikkaweb.github.io/html-aria-agent-demo/preuves/2026-10-08/controle-v21/'+(lang==='fr'?'':'index-en.html'));
+  check('Complément hreflang',await p.locator('link[rel="alternate"][hreflang]').count(),3);
+  check('Complément ancres',await p.locator('a[href^="#"]').evaluateAll(as=>as.every(a=>!!document.getElementById(a.hash.slice(1)))),true);
+  const links=await p.locator('a[href]').evaluateAll(as=>as.map(a=>a.href).filter(h=>h.startsWith(location.origin)&&!h.includes('#')));
+  for(const href of new Set(links))check('Complément lien '+href,(await c.request.get(href)).status(),200);
+  await p.keyboard.press('Tab');check('Complément évitement',await p.evaluate(()=>document.activeElement.className),'skip');await p.keyboard.press('Enter');await p.keyboard.press('Tab');check('Complément navigation',await p.evaluate(()=>document.activeElement.getAttribute('href')),'#summary');
+  if(js)await p.screenshot({path:path.join(os.tmpdir(),`alsacreations-v21-${lang}-${width}${process.env.BASE_URL?'-production':''}.png`),fullPage:true});
+  r.pages.push({supplement:true,lang,width,javaScript:js,passed:true});await c.close();
  }
  for(const [file,lang] of [['index.html','fr'],['index-en.html','en']]){
   const c=await browser.newContext({javaScriptEnabled:false});const p=await c.newPage();await p.goto(base+file);const target='preuves/2026-10-08/'+(lang==='fr'?'index.html':'index-en.html');check('Lien de découverte '+lang,await p.locator(`a[href="${target}"]`).count()>0,true);await c.close();

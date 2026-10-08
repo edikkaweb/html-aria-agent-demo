@@ -10,6 +10,10 @@ Trois implémentations de « Ajouter au panier » partagent le même environneme
 
 **Question ouverte : un agent peut-il réussir une action qui reste inaccessible au clavier ?** Les tests déterministes ne répondent pas à cette question. Les essais d’agents indépendants et de lecteurs d’écran restent **Non testé** tant qu’aucun relevé correspondant n’est publié.
 
+Contrôle complémentaire V2.1 : [MCP 0.0.83 et représentations](https://edikkaweb.github.io/html-aria-agent-demo/preuves/2026-10-08/controle-v21/). Les données initiales sont conservées ; Lighthouse n’a pas été relancé.
+
+V2.1 verification: [MCP 0.0.83 and representations](https://edikkaweb.github.io/html-aria-agent-demo/preuves/2026-10-08/controle-v21/index-en.html). Initial evidence is preserved; Lighthouse was not rerun.
+
 ## Complément du 8 octobre 2026 : MCP, Lighthouse et clavier
 
 [Lire les nouvelles preuves](https://edikkaweb.github.io/html-aria-agent-demo/preuves/2026-10-08/) · [English evidence guide](https://edikkaweb.github.io/html-aria-agent-demo/preuves/2026-10-08/index-en.html) · [Scripts et résultats bruts](preuves/2026-10-08/README.md)

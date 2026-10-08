@@ -4,14 +4,14 @@
   "source": "observations.json",
   "selection": "date UTC décroissante, puis index décroissant, sans filtrage de statut",
   "hashes": {
-    "index.template.html": "d54c33ece26e5de7852c2ba367545eb6d495f7e7f08ac1deab7e935887f9a975",
-    "index-en.html": "b71ad8c15c26c61491620d2d92400582e6aa8f53516e8cdf35b981af5fa18958",
+    "index.template.html": "4e41ff5239f13029ffabd8960c432e4db9543ed1cb6dc1cdea4d4b0993777759",
+    "index-en.html": "9678e3c75ce42252c741f6aa0e97c4a93c61b950d1bf9e20e8421f5b6d5e372f",
     "favicon.svg": "bc888c3cb8bc837f94e98cbe16e8b5d1f53b790c80e204f9bbc8482d7d75c752",
     "observations.json": "a428f26b758f1c1b79578b5bb8c754c52a55f9078ecce2cca045d75e0299609f",
     "observations-view.js": "10e7f9235792af867c4372ff2e4d2b3e7645165a2c2bb3e1fb4bf7b073e0865e",
     "results.js": "604d94ca141aa52cb4b4d675a9f760f0b379e6357e59740dc50f13dbcc4278a8",
     "presentation.css": "a5fb3f6943af1970ca353b6070dcf8f73e5a267d2b8e541f71d8207b16e1f50b",
     "render-observations.mjs": "74c2098045712b04397e03b4598f679c870f00857891bd33b6368d96adf1c342",
-    "index.html": "ec455320844bc2cb9983b8d8e98dc9597ea33f02b38ac47d79ef5e7242fd1951"
+    "index.html": "635ff4f5e9ebd3ed4d484f7efd91c90023e1ed00d1f81cfe8d75c63a187216d3"
   }
 }

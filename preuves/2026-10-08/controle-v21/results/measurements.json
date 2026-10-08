@@ -1,0 +1,461 @@
+{
+  "startedAt": "2026-10-08T19:22:24.745Z",
+  "os": {
+    "platform": "darwin",
+    "release": "25.3.0",
+    "arch": "arm64"
+  },
+  "node": "v24.19.0",
+  "versions": {
+    "mcp": "0.0.83",
+    "mcpPlaywright": "1.64.0-alpha-1790635538000",
+    "playwright": "1.64.0"
+  },
+  "sourceCommit": "ae880251a7e8b40ceaed41e4eca2b7b82137d762",
+  "sources": {
+    "original": {
+      "a.html": "d43a087c6007885509f34928657f8ab0cf16ff43143527b7b3ab0ceb7e731bde",
+      "b.html": "06e6f66d168d6b8c83f3dcdf1aa5469e43d64082b91405fe4ec4622b7ef8ee88",
+      "c.html": "91a31069f49e49fe28daf7f700b9c5b37104df715f97cd5b14d2c994dd7842dc",
+      "styles.css": "df1378eb74252364826b20b5cb8120d13decca6a92ffb0ae71f7e0822de424fd",
+      "experiment.js": "c6adc8745f1f354ecf94ba92789983210c38fd05902621551a46d2ab9d29dc6d"
+    },
+    "no-pointer": {
+      "a.html": "d43a087c6007885509f34928657f8ab0cf16ff43143527b7b3ab0ceb7e731bde",
+      "b.html": "06e6f66d168d6b8c83f3dcdf1aa5469e43d64082b91405fe4ec4622b7ef8ee88",
+      "c.html": "91a31069f49e49fe28daf7f700b9c5b37104df715f97cd5b14d2c994dd7842dc",
+      "styles.css": "07fd40d601a28e93bf1820c88a3ea6e8cc8bb3aad5063b64d16b4305ea9ae118",
+      "experiment.js": "c6adc8745f1f354ecf94ba92789983210c38fd05902621551a46d2ab9d29dc6d"
+    }
+  },
+  "mcp": [
+    {
+      "dataset": "original",
+      "variant": "a",
+      "line": "- generic [ref=e14] [cursor=pointer]: Ajouter au panier",
+      "after": {
+        "count": "1",
+        "tabIndex": -1
+      },
+      "yaml": "- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - generic [ref=e14] [cursor=pointer]: Ajouter au panier\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html"
+    },
+    {
+      "dataset": "original",
+      "variant": "b",
+      "line": "- button \"Ajouter au panier\" [ref=e14] [cursor=pointer]",
+      "after": {
+        "count": "1",
+        "tabIndex": -1
+      },
+      "yaml": "- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - button \"Ajouter au panier\" [ref=e14] [cursor=pointer]\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html"
+    },
+    {
+      "dataset": "original",
+      "variant": "c",
+      "line": "- button \"Ajouter au panier\" [ref=e14] [cursor=pointer]",
+      "after": {
+        "count": "1",
+        "tabIndex": 0
+      },
+      "yaml": "- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - button \"Ajouter au panier\" [ref=e14] [cursor=pointer]\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html"
+    },
+    {
+      "dataset": "no-pointer",
+      "variant": "a",
+      "line": "- generic [ref=e14]: Ajouter au panier",
+      "after": {
+        "count": "1",
+        "tabIndex": -1
+      },
+      "yaml": "- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - generic [ref=e14]: Ajouter au panier\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html"
+    },
+    {
+      "dataset": "no-pointer",
+      "variant": "b",
+      "line": "- button \"Ajouter au panier\" [ref=e14]",
+      "after": {
+        "count": "1",
+        "tabIndex": -1
+      },
+      "yaml": "- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - button \"Ajouter au panier\" [ref=e14]\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html"
+    },
+    {
+      "dataset": "no-pointer",
+      "variant": "c",
+      "line": "- button \"Ajouter au panier\" [ref=e14]",
+      "after": {
+        "count": "1",
+        "tabIndex": 0
+      },
+      "yaml": "- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - button \"Ajouter au panier\" [ref=e14]\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html"
+    }
+  ],
+  "keyboard": [
+    {
+      "variant": "a",
+      "exit": 1,
+      "stats": {
+        "startTime": "2026-10-08T19:22:39.576Z",
+        "duration": 4115.661,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "stderr": "(node:12754) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:12766) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "variant": "b",
+      "exit": 1,
+      "stats": {
+        "startTime": "2026-10-08T19:22:43.918Z",
+        "duration": 4260.076,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "stderr": "(node:12779) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:12791) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "variant": "c",
+      "exit": 0,
+      "stats": {
+        "startTime": "2026-10-08T19:22:48.388Z",
+        "duration": 781.429,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "stderr": "(node:12811) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    }
+  ],
+  "representations": [
+    {
+      "variant": "a",
+      "targeted": "- text: Ajouter au panier",
+      "notesInDefaultSnapshot": false,
+      "exposedNotesCount": 0
+    },
+    {
+      "variant": "b",
+      "targeted": "- button \"Ajouter au panier\"",
+      "notesInDefaultSnapshot": false,
+      "exposedNotesCount": 0
+    },
+    {
+      "variant": "c",
+      "targeted": "- button \"Ajouter au panier\"",
+      "notesInDefaultSnapshot": false,
+      "exposedNotesCount": 0
+    }
+  ],
+  "activation": [
+    {
+      "variant": "b",
+      "method": "click",
+      "beforeActivation": null,
+      "count": "1",
+      "focused": "",
+      "tabIndex": -1
+    },
+    {
+      "variant": "b",
+      "method": "press",
+      "beforeActivation": null,
+      "count": "0",
+      "focused": "",
+      "tabIndex": -1
+    },
+    {
+      "variant": "b",
+      "method": "tab",
+      "beforeActivation": {
+        "id": "reset",
+        "text": "Vider le panier"
+      },
+      "count": "0",
+      "focused": "reset",
+      "tabIndex": -1
+    },
+    {
+      "variant": "c",
+      "method": "click",
+      "beforeActivation": null,
+      "count": "1",
+      "focused": "command",
+      "tabIndex": 0
+    },
+    {
+      "variant": "c",
+      "method": "press",
+      "beforeActivation": null,
+      "count": "1",
+      "focused": "command",
+      "tabIndex": 0
+    },
+    {
+      "variant": "c",
+      "method": "tab",
+      "beforeActivation": {
+        "id": "command",
+        "text": "Ajouter au panier"
+      },
+      "count": "1",
+      "focused": "command",
+      "tabIndex": 0
+    },
+    {
+      "variant": "c-tabindex-minus-one",
+      "method": "click",
+      "beforeActivation": null,
+      "count": "1",
+      "focused": "command",
+      "tabIndex": -1
+    },
+    {
+      "variant": "c-tabindex-minus-one",
+      "method": "press",
+      "beforeActivation": null,
+      "count": "1",
+      "focused": "command",
+      "tabIndex": -1
+    },
+    {
+      "variant": "c-tabindex-minus-one",
+      "method": "tab",
+      "beforeActivation": {
+        "id": "reset",
+        "text": "Vider le panier"
+      },
+      "count": "0",
+      "focused": "reset",
+      "tabIndex": -1
+    }
+  ],
+  "checks": [
+    {
+      "name": "NOTES absent default snapshot a",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "NOTES absent exposed AX nodes a",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "NOTES absent default snapshot b",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "NOTES absent exposed AX nodes b",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "NOTES absent default snapshot c",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "NOTES absent exposed AX nodes c",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "b click",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "b press",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "b tab",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "c click",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "c press",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "c tab",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "c-tabindex-minus-one click",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "c-tabindex-minus-one press",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "c-tabindex-minus-one tab",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "browser_click target supported",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MCP count original/a",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "MCP cursor original/a",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MCP NOTES original/a",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MCP count original/b",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "MCP cursor original/b",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MCP NOTES original/b",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MCP count original/c",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "MCP cursor original/c",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MCP NOTES original/c",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MCP count no-pointer/a",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "MCP cursor no-pointer/a",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "MCP NOTES no-pointer/a",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MCP count no-pointer/b",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "MCP cursor no-pointer/b",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "MCP NOTES no-pointer/b",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MCP count no-pointer/c",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "MCP cursor no-pointer/c",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "MCP NOTES no-pointer/c",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "MCP complete YAML B/C original",
+      "actual": "- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - button \"Ajouter au panier\" [ref=e14] [cursor=pointer]\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html",
+      "expected": "- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - button \"Ajouter au panier\" [ref=e14] [cursor=pointer]\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html"
+    },
+    {
+      "name": "MCP complete YAML B/C no-pointer",
+      "actual": "- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - button \"Ajouter au panier\" [ref=e14]\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html",
+      "expected": "- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - button \"Ajouter au panier\" [ref=e14]\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html"
+    },
+    {
+      "name": "Keyboard a",
+      "actual": {
+        "exit": 1,
+        "passed": 0,
+        "failed": 2
+      },
+      "expected": {
+        "exit": 1,
+        "passed": 0,
+        "failed": 2
+      }
+    },
+    {
+      "name": "Keyboard b",
+      "actual": {
+        "exit": 1,
+        "passed": 0,
+        "failed": 2
+      },
+      "expected": {
+        "exit": 1,
+        "passed": 0,
+        "failed": 2
+      }
+    },
+    {
+      "name": "Keyboard c",
+      "actual": {
+        "exit": 0,
+        "passed": 2,
+        "failed": 0
+      },
+      "expected": {
+        "exit": 0,
+        "passed": 2,
+        "failed": 0
+      }
+    }
+  ],
+  "passed": true,
+  "chrome": "155.0.8059.39",
+  "completedAt": "2026-10-08T19:22:49.177Z"
+}

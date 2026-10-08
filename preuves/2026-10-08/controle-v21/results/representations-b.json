@@ -1,0 +1,1380 @@
+{
+  "variant": "b",
+  "targeted": "- button \"Ajouter au panier\"",
+  "body": "- banner:\n  - text: ATELIER\n  - link \"Voir le produit\":\n    - /url: \"#product\"\n- main:\n  - region \"Carnet de notes\":\n    - paragraph: Papeterie · Collection essentielle\n    - heading \"Carnet de notes\" [level=1]\n    - paragraph: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n    - button \"Ajouter au panier\"\n  - paragraph:\n    - text: \"Articles dans le panier :\"\n    - status: \"0\"\n  - button \"Vider le panier\"\n  - link \"Retour à la présentation\":\n    - /url: index.html",
+  "ax": {
+    "nodes": [
+      {
+        "nodeId": "2",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "RootWebArea"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 144
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Carnet de notes — Panier",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label",
+              "superseded": true
+            },
+            {
+              "type": "relatedElement",
+              "value": {
+                "type": "computedString",
+                "value": "Carnet de notes — Panier"
+              },
+              "nativeSource": "title"
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "focused",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "http://127.0.0.1:52691/original/b.html"
+            }
+          }
+        ],
+        "childIds": [
+          "3"
+        ],
+        "backendDOMNodeId": 2,
+        "frameId": "04387D90439D2205DBB3BD369B0F1C4D"
+      },
+      {
+        "nodeId": "3",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "2",
+        "childIds": [
+          "11"
+        ],
+        "backendDOMNodeId": 3
+      },
+      {
+        "nodeId": "11",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "3",
+        "childIds": [
+          "12",
+          "16"
+        ],
+        "backendDOMNodeId": 11
+      },
+      {
+        "nodeId": "12",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "banner"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 94
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "attribute": "title"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "11",
+        "childIds": [
+          "13"
+        ],
+        "backendDOMNodeId": 12
+      },
+      {
+        "nodeId": "16",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "main"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 118
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "attribute": "title"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "11",
+        "childIds": [
+          "18",
+          "26",
+          "30"
+        ],
+        "backendDOMNodeId": 16
+      },
+      {
+        "nodeId": "13",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "12",
+        "childIds": [
+          "14",
+          "15"
+        ],
+        "backendDOMNodeId": 13
+      },
+      {
+        "nodeId": "14",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "13",
+        "childIds": [
+          "32"
+        ],
+        "backendDOMNodeId": 14
+      },
+      {
+        "nodeId": "32",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "ATELIER",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "ATELIER"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "14",
+        "childIds": [
+          "-1000000002"
+        ],
+        "backendDOMNodeId": 32
+      },
+      {
+        "nodeId": "15",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "link"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 110
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Voir le produit",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Voir le produit"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "http://127.0.0.1:52691/original/b.html#product"
+            }
+          }
+        ],
+        "parentId": "13",
+        "childIds": [
+          "33"
+        ],
+        "backendDOMNodeId": 15
+      },
+      {
+        "nodeId": "18",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "region"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 143
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Carnet de notes",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "value": {
+                "type": "computedString",
+                "value": "Carnet de notes"
+              },
+              "attribute": "aria-labelledby",
+              "attributeValue": {
+                "type": "idrefList",
+                "value": "product-title",
+                "relatedNodes": [
+                  {
+                    "backendDOMNodeId": 23,
+                    "idref": "product-title",
+                    "text": "Carnet de notes"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label",
+              "superseded": true
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "labelledby",
+            "value": {
+              "type": "nodeList",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 23,
+                  "idref": "product-title",
+                  "text": "Carnet de notes"
+                }
+              ]
+            }
+          }
+        ],
+        "parentId": "16",
+        "childIds": [
+          "21"
+        ],
+        "backendDOMNodeId": 18
+      },
+      {
+        "nodeId": "26",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "16",
+        "childIds": [
+          "27",
+          "29"
+        ],
+        "backendDOMNodeId": 26
+      },
+      {
+        "nodeId": "27",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "paragraph"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 133
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "26",
+        "childIds": [
+          "40",
+          "28"
+        ],
+        "backendDOMNodeId": 27
+      },
+      {
+        "nodeId": "29",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 9
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Vider le panier",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Vider le panier"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ],
+        "parentId": "26",
+        "childIds": [
+          "42"
+        ],
+        "backendDOMNodeId": 29
+      },
+      {
+        "nodeId": "30",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "sectionfooter"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 86
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "attribute": "title"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "16",
+        "childIds": [
+          "31"
+        ],
+        "backendDOMNodeId": 30
+      },
+      {
+        "nodeId": "-1000000002",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "ATELIER"
+        },
+        "properties": [],
+        "parentId": "32",
+        "childIds": []
+      },
+      {
+        "nodeId": "33",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Voir le produit",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Voir le produit"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "15",
+        "childIds": [
+          "-1000000003"
+        ],
+        "backendDOMNodeId": 33
+      },
+      {
+        "nodeId": "21",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "18",
+        "childIds": [
+          "22",
+          "23",
+          "24",
+          "25"
+        ],
+        "backendDOMNodeId": 21
+      },
+      {
+        "nodeId": "22",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "paragraph"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 133
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "21",
+        "childIds": [
+          "36"
+        ],
+        "backendDOMNodeId": 22
+      },
+      {
+        "nodeId": "23",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "heading"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 96
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Carnet de notes",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Carnet de notes"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "level",
+            "value": {
+              "type": "integer",
+              "value": 1
+            }
+          }
+        ],
+        "parentId": "21",
+        "childIds": [
+          "37"
+        ],
+        "backendDOMNodeId": 23
+      },
+      {
+        "nodeId": "24",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "paragraph"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 133
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "21",
+        "childIds": [
+          "38"
+        ],
+        "backendDOMNodeId": 24
+      },
+      {
+        "nodeId": "25",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 9
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Ajouter au panier",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Ajouter au panier"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "21",
+        "childIds": [
+          "39"
+        ],
+        "backendDOMNodeId": 25
+      },
+      {
+        "nodeId": "40",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Articles dans le panier : ",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Articles dans le panier : "
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "27",
+        "childIds": [
+          "-1000000009"
+        ],
+        "backendDOMNodeId": 40
+      },
+      {
+        "nodeId": "28",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "status"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 159
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "attribute",
+              "attribute": "title"
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "live",
+            "value": {
+              "type": "token",
+              "value": "polite"
+            }
+          },
+          {
+            "name": "atomic",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          },
+          {
+            "name": "relevant",
+            "value": {
+              "type": "tokenList",
+              "value": "additions text"
+            }
+          },
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          }
+        ],
+        "parentId": "27",
+        "childIds": [
+          "41"
+        ],
+        "backendDOMNodeId": 28
+      },
+      {
+        "nodeId": "42",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Vider le panier",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Vider le panier"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "29",
+        "childIds": [
+          "-1000000011"
+        ],
+        "backendDOMNodeId": 42
+      },
+      {
+        "nodeId": "31",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "link"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 110
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Retour à la présentation",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Retour à la présentation"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "http://127.0.0.1:52691/original/index.html"
+            }
+          }
+        ],
+        "parentId": "30",
+        "childIds": [
+          "43"
+        ],
+        "backendDOMNodeId": 31
+      },
+      {
+        "nodeId": "-1000000003",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Voir le produit"
+        },
+        "properties": [],
+        "parentId": "33",
+        "childIds": []
+      },
+      {
+        "nodeId": "36",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "PAPETERIE · COLLECTION ESSENTIELLE",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "PAPETERIE · COLLECTION ESSENTIELLE"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "22",
+        "childIds": [
+          "-1000000004"
+        ],
+        "backendDOMNodeId": 36
+      },
+      {
+        "nodeId": "37",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Carnet de notes",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Carnet de notes"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "23",
+        "childIds": [
+          "-1000000005"
+        ],
+        "backendDOMNodeId": 37
+      },
+      {
+        "nodeId": "38",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages."
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "24",
+        "childIds": [
+          "-1000000006",
+          "-1000000007"
+        ],
+        "backendDOMNodeId": 38
+      },
+      {
+        "nodeId": "39",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Ajouter au panier",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Ajouter au panier"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "25",
+        "childIds": [
+          "-1000000008"
+        ],
+        "backendDOMNodeId": 39
+      },
+      {
+        "nodeId": "-1000000009",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Articles dans le panier : "
+        },
+        "properties": [],
+        "parentId": "40",
+        "childIds": []
+      },
+      {
+        "nodeId": "41",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "0",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "0"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "28",
+        "childIds": [
+          "-1000000010"
+        ],
+        "backendDOMNodeId": 41
+      },
+      {
+        "nodeId": "-1000000011",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Vider le panier"
+        },
+        "properties": [],
+        "parentId": "42",
+        "childIds": []
+      },
+      {
+        "nodeId": "43",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Retour à la présentation",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Retour à la présentation"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "31",
+        "childIds": [
+          "-1000000012"
+        ],
+        "backendDOMNodeId": 43
+      },
+      {
+        "nodeId": "-1000000004",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "PAPETERIE · COLLECTION ESSENTIELLE"
+        },
+        "properties": [],
+        "parentId": "36",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000005",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Carnet de notes"
+        },
+        "properties": [],
+        "parentId": "37",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000006",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Un carnet pour les idées, les croquis et les choses à "
+        },
+        "properties": [],
+        "parentId": "38",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000007",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "retenir. Format A5, papier ivoire, 160 pages."
+        },
+        "properties": [],
+        "parentId": "38",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000008",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Ajouter au panier"
+        },
+        "properties": [],
+        "parentId": "39",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000010",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "0"
+        },
+        "properties": [],
+        "parentId": "41",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000012",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Retour à la présentation"
+        },
+        "properties": [],
+        "parentId": "43",
+        "childIds": []
+      }
+    ]
+  },
+  "notesInDefaultSnapshot": false,
+  "exposedNotes": []
+}

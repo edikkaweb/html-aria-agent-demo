@@ -1,0 +1,17 @@
+{
+  "name": "article-alsacreations-complement-v21",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.19"
+  },
+  "scripts": {
+    "measure": "node measure.mjs"
+  },
+  "dependencies": {
+    "@playwright/mcp": "0.0.83",
+    "@playwright/test": "1.64.0",
+    "@modelcontextprotocol/sdk": "1.29.0"
+  }
+}

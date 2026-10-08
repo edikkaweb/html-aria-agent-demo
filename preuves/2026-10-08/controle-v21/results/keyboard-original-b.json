@@ -1,0 +1,242 @@
+{
+  "config": {
+    "argv": [
+      "/Users/bertrand/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/private/tmp/alsacreations-v21-20261008/reproduction-v21/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      "/private/tmp/alsacreations-v21-20261008/reproduction-v21/playwright.config.cjs"
+    ],
+    "configFile": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/playwright.config.cjs",
+    "rootDir": "/private/tmp/alsacreations-v21-20261008/reproduction-v21",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/test-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/private/tmp/alsacreations-v21-20261008/reproduction-v21",
+        "testIgnore": [],
+        "testMatch": [
+          "keyboard.spec.cjs"
+        ],
+        "timeout": 15000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/test-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/private/tmp/alsacreations-v21-20261008/reproduction-v21",
+        "snapshotDir": "/private/tmp/alsacreations-v21-20261008/reproduction-v21",
+        "testIgnore": [],
+        "testMatch": "keyboard.spec.cjs",
+        "timeout": 15000,
+        "use": {
+          "baseURL": "http://127.0.0.1:52691/original/",
+          "channel": "chrome",
+          "headless": true,
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "locale": "fr-FR"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/results/keyboard-original-b.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "keyboard.spec.cjs",
+      "file": "keyboard.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Tab atteint le bouton ; Enter ajoute un article",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 15000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1686,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Ajouter au panier', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  1500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('button', { name: 'Ajouter au panier', exact: true }) with timeout 1500ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Ajouter au panier', exact: true })\u001b[22m\n\u001b[2m    16 × locator resolved to <div id=\"command\" role=\"button\" class=\"command\">Ajouter au panier</div>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Ajouter au panier', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  1500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('button', { name: 'Ajouter au panier', exact: true }) with timeout 1500ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Ajouter au panier', exact: true })\u001b[22m\n\u001b[2m    16 × locator resolved to <div id=\"command\" role=\"button\" class=\"command\">Ajouter au panier</div>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n    at /private/tmp/alsacreations-v21-20261008/reproduction-v21/keyboard.spec.cjs:13:9",
+                    "location": {
+                      "file": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/keyboard.spec.cjs",
+                      "column": 9,
+                      "line": 13
+                    },
+                    "snippet": "  11 |     await expect(page.getByRole('button', {\n  12 |       name: 'Ajouter au panier', exact: true,\n> 13 |     })).toBeFocused();\n     |         ^\n  14 |     await page.keyboard.press(key);\n  15 |     await expect(page.locator('#count')).toHaveText('1');\n  16 |   });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/keyboard.spec.cjs",
+                        "column": 9,
+                        "line": 13
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Ajouter au panier', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  1500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('button', { name: 'Ajouter au panier', exact: true }) with timeout 1500ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Ajouter au panier', exact: true })\u001b[22m\n\u001b[2m    16 × locator resolved to <div id=\"command\" role=\"button\" class=\"command\">Ajouter au panier</div>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  11 |     await expect(page.getByRole('button', {\n  12 |       name: 'Ajouter au panier', exact: true,\n> 13 |     })).toBeFocused();\n     |         ^\n  14 |     await page.keyboard.press(key);\n  15 |     await expect(page.locator('#count')).toHaveText('1');\n  16 |   });\n    at /private/tmp/alsacreations-v21-20261008/reproduction-v21/keyboard.spec.cjs:13:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-08T19:22:44.094Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/test-artifacts/keyboard-Tab-atteint-le-bouton-Enter-ajoute-un-article/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/keyboard.spec.cjs",
+                    "column": 9,
+                    "line": 13
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "cd363ba3b6c5c17ad62b-ac37e8979140a41b87ab",
+          "file": "keyboard.spec.cjs",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "Tab atteint le bouton ; Space ajoute un article",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 15000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1698,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Ajouter au panier', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  1500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('button', { name: 'Ajouter au panier', exact: true }) with timeout 1500ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Ajouter au panier', exact: true })\u001b[22m\n\u001b[2m    16 × locator resolved to <div id=\"command\" role=\"button\" class=\"command\">Ajouter au panier</div>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Ajouter au panier', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  1500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('button', { name: 'Ajouter au panier', exact: true }) with timeout 1500ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Ajouter au panier', exact: true })\u001b[22m\n\u001b[2m    16 × locator resolved to <div id=\"command\" role=\"button\" class=\"command\">Ajouter au panier</div>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n    at /private/tmp/alsacreations-v21-20261008/reproduction-v21/keyboard.spec.cjs:13:9",
+                    "location": {
+                      "file": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/keyboard.spec.cjs",
+                      "column": 9,
+                      "line": 13
+                    },
+                    "snippet": "  11 |     await expect(page.getByRole('button', {\n  12 |       name: 'Ajouter au panier', exact: true,\n> 13 |     })).toBeFocused();\n     |         ^\n  14 |     await page.keyboard.press(key);\n  15 |     await expect(page.locator('#count')).toHaveText('1');\n  16 |   });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/keyboard.spec.cjs",
+                        "column": 9,
+                        "line": 13
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Ajouter au panier', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  1500ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('button', { name: 'Ajouter au panier', exact: true }) with timeout 1500ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Ajouter au panier', exact: true })\u001b[22m\n\u001b[2m    16 × locator resolved to <div id=\"command\" role=\"button\" class=\"command\">Ajouter au panier</div>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  11 |     await expect(page.getByRole('button', {\n  12 |       name: 'Ajouter au panier', exact: true,\n> 13 |     })).toBeFocused();\n     |         ^\n  14 |     await page.keyboard.press(key);\n  15 |     await expect(page.locator('#count')).toHaveText('1');\n  16 |   });\n    at /private/tmp/alsacreations-v21-20261008/reproduction-v21/keyboard.spec.cjs:13:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-08T19:22:46.217Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/test-artifacts/keyboard-Tab-atteint-le-bouton-Space-ajoute-un-article/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/private/tmp/alsacreations-v21-20261008/reproduction-v21/keyboard.spec.cjs",
+                    "column": 9,
+                    "line": 13
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "cd363ba3b6c5c17ad62b-78d75dfdd3bd2a92827c",
+          "file": "keyboard.spec.cjs",
+          "line": 6,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-08T19:22:43.918Z",
+    "duration": 4260.076,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

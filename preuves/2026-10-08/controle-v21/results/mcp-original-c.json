@@ -1,0 +1,82 @@
+{
+  "dataset": "original",
+  "variant": "c",
+  "calls": [
+    {
+      "name": "browser_navigate",
+      "arguments": {
+        "url": "http://127.0.0.1:52691/original/c.html"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "### Ran Playwright code\n```js\nawait page.goto('http://127.0.0.1:52691/original/c.html');\n```\n### Page\n- Page URL: http://127.0.0.1:52691/original/c.html\n- Page Title: Carnet de notes — Panier\n- Console: 1 errors, 0 warnings\n### Snapshot\n- [Snapshot](results/mcp-output/page-2026-10-08T19-22-31-454Z.yml)\n### Events\n- New console entries: results/mcp-output/console-2026-10-08T19-22-31-417Z.log#L1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "browser_snapshot",
+      "arguments": {},
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "### Page\n- Page URL: http://127.0.0.1:52691/original/c.html\n- Page Title: Carnet de notes — Panier\n- Console: 1 errors, 0 warnings\n### Snapshot\n```yaml\n- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - button \"Ajouter au panier\" [ref=e14] [cursor=pointer]\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html\n```"
+          }
+        ]
+      }
+    },
+    {
+      "name": "browser_evaluate",
+      "arguments": {
+        "function": "() => ({count:document.querySelector(\"#count\").textContent,tabIndex:document.querySelector(\"#command\").tabIndex,userAgent:navigator.userAgent})"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "### Result\n{\n  \"count\": \"0\",\n  \"tabIndex\": 0,\n  \"userAgent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36\"\n}\n### Ran Playwright code\n```js\nawait page.evaluate('() => ({count:document.querySelector(\"#count\").textContent,tabIndex:document.querySelector(\"#command\").tabIndex,userAgent:navigator.userAgent})');\n```"
+          }
+        ]
+      }
+    },
+    {
+      "name": "browser_click",
+      "arguments": {
+        "target": "e14"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "### Ran Playwright code\n```js\nawait page.getByRole('button', { name: 'Ajouter au panier' }).click();\n```\n### Page\n- Page URL: http://127.0.0.1:52691/original/c.html\n- Page Title: Carnet de notes — Panier\n- Console: 1 errors, 0 warnings\n### Snapshot\n- [Snapshot](results/mcp-output/page-2026-10-08T19-22-32-524Z.yml)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "browser_evaluate",
+      "arguments": {
+        "function": "() => ({count:document.querySelector(\"#count\").textContent,tabIndex:document.querySelector(\"#command\").tabIndex})"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "### Result\n{\n  \"count\": \"1\",\n  \"tabIndex\": 0\n}\n### Ran Playwright code\n```js\nawait page.evaluate('() => ({count:document.querySelector(\"#count\").textContent,tabIndex:document.querySelector(\"#command\").tabIndex})');\n```"
+          }
+        ]
+      }
+    }
+  ],
+  "yaml": "- generic [active] [ref=e1]:\n  - banner [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]: ATELIER\n      - link \"Voir le produit\" [ref=e5] [cursor=pointer]:\n        - /url: \"#product\"\n  - main [ref=e6]:\n    - region [ref=e7]:\n      - generic [ref=e9]: NOTES\n      - generic [ref=e10]:\n        - paragraph [ref=e11]: Papeterie · Collection essentielle\n        - heading \"Carnet de notes\" [level=1] [ref=e12]\n        - paragraph [ref=e13]: Un carnet pour les idées, les croquis et les choses à retenir. Format A5, papier ivoire, 160 pages.\n        - button \"Ajouter au panier\" [ref=e14] [cursor=pointer]\n    - generic [ref=e15]:\n      - paragraph [ref=e16]:\n        - text: \"Articles dans le panier :\"\n        - status [ref=e17]: \"0\"\n      - button \"Vider le panier\" [ref=e18] [cursor=pointer]\n    - link \"Retour à la présentation\" [ref=e20] [cursor=pointer]:\n      - /url: index.html",
+  "line": "- button \"Ajouter au panier\" [ref=e14] [cursor=pointer]",
+  "ref": "e14",
+  "after": {
+    "count": "1",
+    "tabIndex": 0
+  },
+  "stderr": ""
+}
